@@ -1,0 +1,81 @@
+.html {
+    text-align: center;
+    margin: 0px 50px;
+}
+
+.InlineElementstitle {
+    color: white;
+    background-color: #625A99;
+    padding: 5px;
+}
+
+.InlineElementsTitle a{
+    text-decoration: none;
+    color: white;
+}
+
+.content {
+    min-height: 100px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+
+
+.InlineElements {
+    margin: 20px 5px;
+    border: 2px solid lightgreen;
+    border-radius: 10px;
+    
+}
+
+.InlineElementsTitle {
+    background-color: lightgreen;
+    border-radius: 5px 5px 0 0;
+}
+
+.InlineElementsTitle h1 {
+    margin: 0;
+}
+
+.BlockLevelElements {
+    margin: 20px 5px;
+    border: 2px solid #625A99;
+    border-radius: 10px;
+}
+
+.BlockLevelElementsTitle {
+    background-color: #625A99;
+    border-radius: 5px 5px 0 0;
+}
+
+.BlockLevelElements h1 {
+    margin: 0;
+}
+
+.BlockLevelElementsTitle a {
+    text-decoration: none;
+    color: white;
+}
+
+.attribute {
+    text-align: center;
+}
+
+.attribute_image {
+    border: 2px solid blue;
+}
+
+.BackButton {
+    background-color: rebeccapurple;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 1px 10px 10px lightgray;
+    color: white;
+    margin-top: 50px;
+}
+
+/* .colors h1 {
+    margin-bottom: 5px;
+} */

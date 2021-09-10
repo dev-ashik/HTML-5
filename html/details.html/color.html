@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../styles/style.css" />
+    <style>
+        body {
+            margin: 0 50px;
+        }
+      .row {
+        display: flex;
+        color: red;
+      }
+      .block {
+        width: 30%;
+        text-align: center;
+        margin: 2%;
+      }
+
+      .first {
+        background-color: rgb(255, 0, 0);
+        color: white;
+      }
+
+      .second {
+        background-color: rgb(0, 255, 0);
+      }
+      .third {
+        background-color: rgb(0, 0, 255);
+      }
+      .fourth {
+        background-color: rgb(0, 0, 0);
+      }
+      .fiveth {
+        background-color: rgb(255, 255, 255);
+      }
+      .sixth {
+        background-color: rgb(0, 255, 255);
+      }
+      .seventh {
+        background-color: rgb(255, 0, 255);
+        color: white;
+      }
+      .eithth {
+        background-color: rgb(255, 255, 0);
+      }
+      .nineth {
+        background-color: rgb(256, 256, 256);
+      }
+
+      .rgbaSection {
+        background-image: url("../../picture/weav.jpg");
+        color: rgb(53, 165, 26);
+      }
+      .rgbaOne {
+        background-color: rgba(255, 99, 71, 0);
+      }
+      .rgbaTwo {
+        background-color: rgba(255, 99, 71, 0.5);
+      }
+      .rgbaThree {
+        background-color: rgba(255, 99, 71, 1);
+        color: white;
+      }
+
+      .hexFirst {
+          background-color: #ff0000;
+          color: white;
+      }
+      .hexSecond {
+          background-color: #00ff00;
+      }
+      .hexThird {
+          background-color: #0000ff;
+      }
+      .hexFourth {
+          background-color: #000000;
+      }
+      .hexFiveth {
+          background-color: #ffffff;
+      }
+      /* .hexSixth {
+          background-color: #0000ff;
+      } */
+
+      .hslFirst {
+          background-color: hsl(0, 100%, 50%);
+          color: white;
+      }
+      .hslSecond {
+          background-color: hsl(120, 100%, 50%);
+      }
+      .hslThird {
+          background-color: hsl(240, 100%, 50%);
+      }
+      .hslFourth {
+          background-color: hsl(0, 100%, 0%);
+      }
+      .hslFiveth {
+          background-color: hsl(0, 100%, 100%);
+      }
+      /* .hslSixth {
+          background-color: hsl(0, 100%, 50%);
+      } */
+
+      .hslaSection {
+          background-image: url("../../picture/weav.jpg");
+      }
+      .hslaFirst {
+          background-color: hsls(0, 100%, 50%, 0);
+          color: white;
+      }
+      .hslaSecond {
+          background-color: hsl(120, 100%, 50%, 0.5);
+      }
+      .hslaThird {
+          background-color: hsl(240, 100%, 50%, 1);
+      }
+    </style>
+  </head>
+  <body>
+    <p>RGB values, HEX values, HSL values, RGBA values, and HSLA values.</p>
+
+    <h1>rgb <mark>rgb(red, green, blue)</mark></h1>
+    <h2></h2>
+    <p>
+      <mark>colors values between 0 and 255</mark> This means that there are 256
+      x 256 x 256 = 16777216 possible colors.
+    </p>
+
+    <section class="rgbSection">
+      <div class="row">
+        <div class="first block">
+          <h2>rgb(255, 0, 0)</h2>
+          <h3>red</h3>
+        </div>
+        <div class="second block">
+          <h2>rgb(0, 255, 0)</h2>
+          <h3>green</h3>
+        </div>
+        <div class="third block">
+          <h2>rgb(255, 0, 0)</h2>
+          <h3>blue</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="fourth block">
+          <h2>rgb(0, 0, 0)</h2>
+          <h3>black</h3>
+        </div>
+        <div class="fiveth block">
+          <h2>rgb(255, 255, 255)</h2>
+          <h3>no color</h3>
+        </div>
+        <div class="sixth block"><h2>rgb(0, 255, 255)</h2></div>
+      </div>
+      <div class="row">
+        <div class="seventh block"><h2>rgb(255, 0, 255)</h2></div>
+        <div class="eithth block"><h2>rgb(255, 255, 0)</h2></div>
+        <div class="nineth block">
+          <h2>rgb(256, 256, 256)</h2>
+          <h3>255 is not color range</h3>
+        </div>
+      </div>
+    </section>
+    <hr />
+
+    <h1>rgba <mark>rgba(red, green, blue, alpha)</mark></h1>
+    <p>
+      The alpha parameter is a number between 0.0 (fully transparent) and 1.0
+      (not transparent at all)
+    </p>
+    <section class="rgbaSection">
+      <div class="row">
+        <div class="rgbaOne block">
+          <h2>rgba(255, 99, 71, 0)</h2>
+          <h3>fully transparent</h3>
+        </div>
+        <div class="rgbaTwo block">
+          <h2>rgba(255, 99, 71, 0.5)</h2>
+          <h3>50% transparent</h3>
+        </div>
+        <div class="rgbaThree block">
+          <h2>rgba(255, 99, 71, 1)</h2>
+          <h3>not transparent</h3>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <h1>HEX <mark>#RRGGBB</mark></h1>
+    <p>A hexadecimal color is specified with: #RRGGBB, where the RR (red), GG (green) and BB (blue) hexadecimal integers specify the components of the color. hexadecimal values between 00 and ff.</p>
+    <section class="hexSection">
+        <div class="row">
+          <div class="hexFirst block">
+            <h2>#ff0000</h2>
+            <h3>red</h3>
+          </div>
+          <div class="hexSecond block">
+            <h2>#00ff00</h2>
+            <h3>green</h3>
+          </div>
+          <div class="hexThird block">
+            <h2>#0000ff</h2>
+            <h3>blue</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="hexFourth block">
+            <h2>#000000</h2>
+            <h3>black</h3>
+          </div>
+          <div class="hexFiveth block">
+            <h2>#ffffff</h2>
+            <h3>no color</h3>
+          </div>
+          <!-- <div class="hexSixth block"><h2>rgb(0, 255, 255)</h2></div> -->
+        </div>
+      </section>
+
+      <hr>
+
+      <h1>HSL <mark>hsl(hue, saturation, lightness)</mark></h1>
+      <p>HSL stands for hue saturation and lightness. Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue. Saturation is a percentage value, 0% means a shade of gray, and 100% is the full color. Lightness is also a percentage value, 0% is black, and 100% is white.</p>
+      <section class="hexSection">
+          <div class="row">
+            <div class="hslFirst block">
+              <h2>hsl(0, 100%, 50%)</h2>
+              <h3>red</h3>
+            </div>
+            <div class="hslSecond block">
+              <h2>hsl(120, 100%, 50%)</h2>
+              <h3>green</h3>
+            </div>
+            <div class="hslThird block">
+              <h2>hsl(240, 100%, 50%)</h2>
+              <h3>blue</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="hslFourth block">
+              <h2>hsl(0, 100%, 0%)</h2>
+              <h3>black</h3>
+            </div>
+            <div class="hslFiveth block">
+              <h2>hsl(0, 100%, 100%)</h2>
+              <h3>no color</h3>
+            </div>
+            <!-- <div class="hslSixth block"><h2>hsl(0, 100%, 50%)</h2></div> -->
+          </div>
+        </section>
+
+        <hr>
+
+        <h1>HSLA <mark>hsla(hue, saturation, lightness, alpha)</mark></h1>
+        <p>The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all)</p>
+        <section class="hslaSection">
+            <div class="row">
+              <div class="hslaFirst block">
+                <h2>hsla(9, 100%, 64%, 0)</h2>
+                <h3>red</h3>
+              </div>
+              <div class="hslaSecond block">
+                <h2>hsla(9, 100%, 64%, 0.5)</h2>
+                <h3>green</h3>
+              </div>
+              <div class="hslaThird block">
+                <h2>hsla(9, 100%, 64%, 1)</h2>
+                <h3>blue</h3>
+              </div>
+            </div>
+          </section>
+
+    <a class="BackButton" href="../InlineElements.html">Back to</a>
+  </body>
+</html>
