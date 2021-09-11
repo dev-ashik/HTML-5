@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HyperLink</title>
+</head>
+<body>
+    <p>
+        By default, links will appear as follows in all browsers:<br>
+
+        An unvisited link is underlined and blue<br>
+        A visited link is underlined and purple<br>
+        An active link is underlined and red<br>
+    </p>
+    <p>
+        By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link.<br>
+        The <span style="color:tomato">target</span> attribute specifies where to open the linked document.
+        <br><br>
+        The target attribute can have one of the following values:<br>
+
+        <span style="color:tomato">_self</span> - Default. Opens the document in the same window/tab as it was clicked<br>
+        <span style="color:tomato">_blank</span> - Opens the document in a new window or tab<br>
+        <span style="color:tomato">_parent</span> - Opens the document in the parent frame<br>
+        <span style="color:tomato">_top</span> - Opens the document in the full body of the window<br>
+    </p>
+    <hr>
+
+        <h2><span style="color:tomato">_blank</span></h2>
+        <a href="./linkA.html">_blank</a>
+<hr>
+        <h2 id="a2">Absolute URLs vs. Relative URLs</h2>
+        <h4>Absolute URLs</h4>
+        <p>
+            a link to a page visit the others website. with the "https://www" part.<br> Example: ______________<br>
+            <a href="https://www.faceBook.com">Absolute URLs</a>
+        </p>
+
+        <h4>Relative URLs</h4>
+        <p>
+            A local link (a link to a page within the same website) is specified with a relative URL (without the "https://www" part):<br> Example: ____________<br>
+            <a href="./linkA.html">Relative URLs</a>
+        </p>
+    
+<hr>
+        <h2 id="a3">Image as a Link</h2>
+        <a href="./linkA.html"><img src="../../picture/html5logo.png" height="20px" width="100px" alt=""></a>
+
+        <h2>Link to an Email Address</h2>
+        <p>Use mailto: inside the href attribute to create a link that opens the user's email program (to let them send a new email):</p>
+        _________
+        <a href="mailto:ashik.swfu@outlook.com">Email</a>
+<hr>
+        <h2>Button as a Link</h2>
+        <p>To use an HTML button as a link, you have to add some JavaScript code.</p>
+        <button onclick="document.location='./linkA.html'">Button link</button>
+<hr>
+        <h2 id="a4">Link Titles attribute like tooltip</h2>
+        <p>The title attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element.</p>
+        ___________
+
+        <hr>
+
+        <h2>link, visited, hover, active</h2>
+        <p>
+            Here, an unvisited link will be green with no underline. A visited link will be pink with no underline. An active link will be yellow and underlined. In addition, when mousing over a link (a:hover) it will become red and underlined:
+        </p>
+        <p>
+            we can also these css on a Button.
+        </p>
+        <style>
+            a:link {
+              color: green;
+              background-color: transparent;
+              text-decoration: none;
+            }
+            
+            a:visited {
+              color: pink;
+              background-color: transparent;
+              text-decoration: none;
+            }
+            
+            a:hover {
+              color: red;
+              background-color: transparent;
+              text-decoration: underline;
+            }
+            
+            a:active {
+              color: yellow;
+              background-color: transparent;
+              text-decoration: underline;
+            }
+            </style>
+
+            <hr>
+            <h2 id="a5">Create Bookmarks</h2>
+            <a href="#a2">a2</a>
+            <a href="#a3">a3</a>
+            <a href="#a4">a4</a>
+            <a href="#a5">a5</a>
+            
+
+
+            <br><br><br><hr>
+        <a href="./linkA.html" title="go to page A">Page A title</a>
+</body>
+</html>
