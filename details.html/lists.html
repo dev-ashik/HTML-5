@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body  style="background-color: #1f1f1f; color: #fefefe;">
+    <h2>An ordered HTML list</h2>
+    <section class="codeRunDiv">
+        <ol>
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+            <li>Fourth item</li>
+        </ol>
+    </section>
+    <section class="codeDiv">
+        <code>
+            &lt;<span class="codeColorDarkRed">ol</span>&gt;<br>
+            &nbsp;&nbsp; &lt;<span class="codeColorDarkRed">li</span>&gt;First item&lt;/<code class="codeColorDarkRed">li</code>&gt;<br>
+            &nbsp;&nbsp; &lt;<span class="codeColorDarkRed">li</span>&gt;Second item&lt;/<code class="codeColorDarkRed">li</code>&gt;<br>
+            &nbsp;&nbsp; &lt;<span class="codeColorDarkRed">li</span>&gt;Third item&lt;/<code class="codeColorDarkRed">li</code>&gt;<br>
+            &nbsp;&nbsp; &lt;<span class="codeColorDarkRed">li</span>&gt;Fourth item&lt;/<code class="codeColorDarkRed">li</code>&gt;<br>
+            &lt;<span class="codeColorDarkRed">ol</span>&gt;<br>
+        </code>
+    </section>
+    <p>The list items will be marked with bullets (small black circles) by default</p>
+    <p>Defines an ordered list &lt;ol&gt;</p>
+    <p>Defines a list item &lt;li&gt;</p>
+    <hr>
+
+
+
+
+    <h2>An unordered HTML list</h2>
+    <p>The list items will be marked with numbers by default</p>
+    <p>Defines an unordered list &lt;ul&gt;</p>
+    <section class="codeRunDiv">
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+        <li>Fourth item</li>
+    </ul>
+    </section>
+    <section class="codeDiv">
+        <code>
+            &lt;<code class="codeColorDarkRed">ul</code>&gt;<br>
+            &nbsp;&nbsp; &lt;<code class="codeColorDarkRed">li</code>&gt;First item&lt;/<code class="codeColorDarkRed">li</code>&gt;<br>
+            &nbsp;&nbsp; &lt;<code class="codeColorDarkRed">li</code>&gt;Second item&lt;/<code class="codeColorDarkRed">li</code>&gt;<br>
+            &nbsp;&nbsp; &lt;<code class="codeColorDarkRed">li</code>&gt;Third item&lt;/<code class="codeColorDarkRed">li</code>&gt;<br>
+            &nbsp;&nbsp; &lt;<code class="codeColorDarkRed">li</code>&gt;Fourth item&lt;/<code class="codeColorDarkRed">li</code>&gt;<br>
+            &lt;<code class="codeColorDarkRed">ul</code>&gt;<br>
+        </code>
+    </section>
+    <h3>Unordered HTML List marker</h3>
+    <section class="codeRunDiv">
+    <ul style="list-style-type: disc;">
+        <li>disc</li>
+    </ul>
+    <ul style="list-style-type: circle;">
+        <li>circle</li>
+    </ul>
+    <ul style="list-style-type: square;">
+        <li>square</li>
+    </ul>
+    <ul style="list-style-type: none;">
+        <li>none</li>
+    </ul>
+
+    </section>
+    <section class="codeDiv">
+        <code>
+            &lt;<span class="codeColorDarkRed">ul</span> <span class="codeColorGreen">style</span><span class="codeColorDarkRed">=</span><span class="codeColorYellow">"list-style-type: disc;"</span>&gt;<br>
+                &nbsp;&nbsp; &lt;<span class="codeColorDarkRed">li</span>&gt;disc&lt;/<code class="codeColorDarkRed">li</code>&gt;<br>
+            &lt;<span class="codeColorDarkRed">ul</span>&gt;<br>
+            &lt;<span class="codeColorDarkRed">ul</span> <span class="codeColorGreen">style</span><span class="codeColorDarkRed">=</span><span class="codeColorYellow">"list-style-type: circle;"</span>&gt;<br>
+                &nbsp;&nbsp; &lt;<span class="codeColorDarkRed">li</span>&gt;circle&lt;/<code class="codeColorDarkRed">li</code>&gt;<br>
+            &lt;<span class="codeColorDarkRed">ul</span>&gt;<br>
+            &lt;<span class="codeColorDarkRed">ul</span> <span class="codeColorGreen">style</span><span class="codeColorDarkRed">=</span><span class="codeColorYellow">"list-style-type: square;"</span>&gt;<br>
+                &nbsp;&nbsp; &lt;<span class="codeColorDarkRed">li</span>&gt;square&lt;/<code class="codeColorDarkRed">li</code>&gt;<br>
+            &lt;<span class="codeColorDarkRed">ul</span>&gt;<br>
+            &lt;<span class="codeColorDarkRed">ul</span> <span class="codeColorGreen">style</span><span class="codeColorDarkRed">=</span><span class="codeColorYellow">"list-style-type: none;"</span>&gt;<br>
+                &nbsp;&nbsp; &lt;<span class="codeColorDarkRed">li</span>&gt;none&lt;/<code class="codeColorDarkRed">li</code>&gt;<br>
+            &lt;<span class="codeColorDarkRed">ul</span>&gt;<br>
+        </code>
+    </section>
+
+    <h3>Nested HTML Lists</h3>
+    <section class="codeRunDiv">
+    <ul>
+        <li>Ashik</li>
+        <li>hobby
+            <ul>
+                <li>watching movie</li>
+                <li>Gaming</li>
+            </ul>
+        </li>
+        <li>Like Food</li>
+            <ol>
+                <li>Bangladeshi food</li>
+                <li>Chinese food</li>
+            </ol>
+    </ul>
+
+    </section>
+    <section class="codeDiv">
+        <code>
+            &lt;<span class="codeColorDarkRed">ul</span>&gt;<br>
+                &nbsp;&nbsp; &lt;<span class="codeColorDarkRed">li</span>&gt;Ashik&lt;/<code class="codeColorDarkRed">li</code>&gt;<br>
+                <!-- &nbsp;&nbsp; &lt;<span class="codeColorDarkRed">li</span>&gt;Like food&lt;/<code class="codeColorDarkRed">li</code>&gt;<br> -->
+                &nbsp;&nbsp; &lt;<span class="codeColorDarkRed">li</span>&gt;hobby<br>
+                    &nbsp;&nbsp; &nbsp;&nbsp; &lt;<span class="codeColorDarkRed">ul</span>&gt;<br>
+                        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &lt;<span class="codeColorDarkRed">li</span>&gt;watching movie&lt;/<code class="codeColorDarkRed">li</code>&gt;<br>
+                        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &lt;<span class="codeColorDarkRed">li</span>&gt;Gaming&lt;/<code class="codeColorDarkRed">li</code>&gt;<br>
+                    &nbsp;&nbsp; &nbsp;&nbsp; &lt;<span class="codeColorDarkRed">/ul</span>&gt;<br>
+                &nbsp;&nbsp; &lt;/<code class="codeColorDarkRed">li</code>&gt;<br>
+
+                &nbsp;&nbsp; &lt;<span class="codeColorDarkRed">li</span>&gt;Like food<br>
+                    &nbsp;&nbsp; &nbsp;&nbsp; &lt;<span class="codeColorDarkRed">ol</span>&gt;<br>
+                        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &lt;<span class="codeColorDarkRed">li</span>&gt;Bangladeshi food&lt;/<code class="codeColorDarkRed">li</code>&gt;<br>
+                        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &lt;<span class="codeColorDarkRed">li</span>&gt;Chinese food&lt;/<code class="codeColorDarkRed">li</code>&gt;<br>
+                    &nbsp;&nbsp; &nbsp;&nbsp; &lt;<span class="codeColorDarkRed">/ol</span>&gt;<br>
+                &nbsp;&nbsp; &lt;/<code class="codeColorDarkRed">li</code>&gt;<br>
+                
+            &lt;<span class="codeColorDarkRed">/ul</span>&gt;<br>
+        </code>
+    </section>
+    
+    
+
+    <hr>
+
+
+
+
+
+    <h2>A Description List</h2>
+    <section class="codeRunDiv">
+        <dl>
+            <dt>First item</dt>
+            <dd>-Second item</dd>
+            <dt>Third item</dt>
+            <dd>-Fourth item</dd>
+        </dl>
+    </section>
+    <section class="codeDiv">
+        <code>
+            &lt;<code class="codeColorDarkRed">dl</code>&gt;<br>
+            &nbsp;&nbsp; &lt;<code class="codeColorDarkRed">dt</code>&gt;First item&lt;/<code class="codeColorDarkRed">dt</code>&gt;<br>
+            &nbsp;&nbsp; &lt;<code class="codeColorDarkRed">dd</code>&gt;Second item&lt;/<code class="codeColorDarkRed">dd</code>&gt;<br>
+            &nbsp;&nbsp; &lt;<code class="codeColorDarkRed">dt</code>&gt;Third item&lt;/<code class="codeColorDarkRed">dt</code>&gt;<br>
+            &nbsp;&nbsp; &lt;<code class="codeColorDarkRed">dd</code>&gt;Fourth item&lt;/<code class="codeColorDarkRed">dd</code>&gt;<br>
+            &lt;<code class="codeColorDarkRed">dl</code>&gt;<br>
+        </code>
+    </section>
+    <p>Defines a description List &lt;dl&gt;</p>
+    <p>Defines a term in a description list &lt;dt&gt;</p>
+    <p>Describes the term in a description list &lt;dd&gt;</p>
+    
+</body>
+</html>

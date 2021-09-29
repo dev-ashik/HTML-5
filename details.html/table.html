@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Table</title>
+    <link rel="stylesheet" href="../styles/style.css">
     <style>
       th,td {
         padding: 5px 10px;
@@ -15,14 +16,14 @@
           /* border-spacing work with out collapse */
       }
       .firstTable,.firstTableTh,.firstTableTd {
-        border: 1px solid black;
+        border: 1px solid #a3a3bd;
         border-collapse: collapse;
       }
 
 /* Second Table start */
 
       .secondTable,.secondTableTh, .secondTableTd {
-        border: 1px solid black;
+        border: 1px solid #a3a3bd;
       }
       .secondTableTh, .secondTableTd  {
         border-radius: 5px;
@@ -69,12 +70,12 @@
       }
     
     .thirdTableTr:nth-child(even) {
-        background-color: #D6EEEE;
+        background-color: #3c4e4e;
     }
     /* Third Table end */
 
     .FourthTable,.FourthTableTh, .FourthTableTd {
-        border: 1px solid black;
+        border: 1px solid #a3a3bd;
         border-collapse: collapse;
       }
 
@@ -84,13 +85,13 @@
       }
 
     .fifthTableTh:nth-child(odd), .fifthTableTd:nth-child(odd) {
-        background-color: #D6EEEE;
+        background-color: #3c4e4e;
       }
     
 
     </style>
   </head>
-  <body>
+  <body style="background-color: #1f1f1f; color: #fefefe;">
       <p>Cell spacing is the space between each cell. By default the space is set to 2 pixels.</p>
     <table class="firstTable">
         <caption>border-collapse: collapse;</caption>
@@ -205,7 +206,7 @@
         <colgroup>
           <col span="1">
           <col span="1" style="visibility: collapse">
-          <col span="3" style="background-color: #D6EEEE">
+          <col span="3" style="background-color: #3c4e4e">
         </colgroup>
         <tr>
         <th>MON</th>
@@ -263,5 +264,7 @@
             If you want to style columns in the middle of a table, insert a "empty" &lt;col&gt; element (with no styles) for the columns before:
             You can hide columns with the visibility: collapse property:    
         </p>
+        <hr><br>
+        <a class="BackButton" href="../index.html">Back to</a>
   </body>
 </html>
