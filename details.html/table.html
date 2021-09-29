@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <style>
+      th,td {
+        padding: 5px 10px;
+      }
+      table {
+          border-spacing: 30px;
+          /* work on second table */
+          /* border-spacing work with out collapse */
+      }
+      .firstTable,.firstTableTh,.firstTableTd {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+/* Second Table start */
+
+      .secondTable,.secondTableTh, .secondTableTd {
+        border: 1px solid black;
+      }
+      .secondTableTh, .secondTableTd  {
+        border-radius: 5px;
+    }
+    .secondTableTh1 {
+        border-style: solid;
+        border-color: red;
+    }
+      .secondTableTh2 {
+          border-style: dotted;
+      }
+      .secondTableTh3 {
+          border-style: dashed;
+      }
+
+      .secondTableTd1 {
+          border-style: double;
+      }
+      .secondTableTd2 {
+          border-style: groove;
+      }
+      .secondTableTd3 {
+          border-style: ridge;
+      }
+      .secondTableTd4 {
+          border-style: inset;
+      }
+      .secondTableTd5 {
+          border-style: outset;
+      }
+      .secondTableTd6 {
+          border-style: none;
+      }
+      /* .secondTableTd6 {
+          border-style: hidden;
+      } */
+
+    /* Second Table end */
+
+    /* Third Table start */
+    .thirdTable,.thirdTableTh, .thirdTableTd {
+        /* border: 1px solid black; */
+        border-collapse: collapse;
+      }
+    
+    .thirdTableTr:nth-child(even) {
+        background-color: #D6EEEE;
+    }
+    /* Third Table end */
+
+    .FourthTable,.FourthTableTh, .FourthTableTd {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+    .fifthTable,.fifthTableTh, .fifthTableTd {
+        /* border: 1px solid black; */
+        border-collapse: collapse;
+      }
+
+    .fifthTableTh:nth-child(odd), .fifthTableTd:nth-child(odd) {
+        background-color: #D6EEEE;
+      }
+    
+
+    </style>
+  </head>
+  <body>
+      <p>Cell spacing is the space between each cell. By default the space is set to 2 pixels.</p>
+    <table class="firstTable">
+        <caption>border-collapse: collapse;</caption>
+      <tr class="firstTableTr">
+        <th class="firstTableTh">Name</th>
+        <th class="firstTableTh">Age</th>
+        <th class="firstTableTh">Favorite</th>
+      </tr>
+      <tr class="firstTableTr">
+        <td class="firstTableTd">Ashik</td>
+        <td class="firstTableTd">23</td>
+        <td class="firstTableTd">Programming</td>
+      </tr>
+      <tr class="firstTableTr">
+        <td class="firstTableTd">Esha moni</td>
+        <td class="firstTableTd">10</td>
+        <td class="firstTableTd">playing</td>
+      </tr>
+    </table>
+
+    <h2>Second tabel</h2>
+    <table class="secondTable">
+        <caption>border-style: dotted;</caption>
+      <tr class="secondTableTr">
+        <th class="secondTableTh secondTableTh1">Name</th>
+        <th class="secondTableTh secondTableTh2">Age</th>
+        <th class="secondTableTh secondTableTh3">Favorite</th>
+      </tr>
+      <tr class="secondTableTr">
+        <td class="secondTableTd secondTableTd1">Ashik</td>
+        <td class="secondTableTd secondTableTd2">23</td>
+        <td class="secondTableTd secondTableTd3">Programming</td>
+      </tr>
+      <tr class="secondTableTr">
+        <td class="secondTableTd secondTableTd4">Esha moni</td>
+        <td class="secondTableTd secondTableTd5">10</td>
+        <td class="secondTableTd secondTableTd6">playing</td>
+      </tr>
+    </table>
+
+    <h2>HTML Table Colspan & Rowspan</h2>
+    <table class="FourthTable">
+      <tr class="FourthTableTr">
+        <th colspan="2" class="FourthTableTh FourthTableTh1">colspan</th>
+        <th class="FourthTableTh FourthTableTh3">test</th>
+      </tr>
+      <tr class="FourthTableTr">
+        <td rowspan="2" class="FourthTableTd FourthTableTd1">rowspan</td>
+        <td class="FourthTableTd FourthTableTd2">test</td>
+        <td class="FourthTableTd FourthTableTd3">test</td>
+      </tr>
+      <tr class="FourthTableTr">
+        <td class="FourthTableTd FourthTableTd5">test</td>
+        <td class="FourthTableTd FourthTableTd6">test</td>
+      </tr>
+    </table>
+
+    <h2>HTML Table Styling</h2>
+    <table class="thirdTable">
+      <tr class="thirdTableTr">
+        <th class="thirdTableTh thirdTableTh1">1</th>
+        <th class="thirdTableTh thirdTableTh3">2</th>
+        <th class="thirdTableTh thirdTableTh3">3</th>
+      </tr>
+      <tr class="thirdTableTr">
+        <td class="thirdTableTd thirdTableTd1">4</td>
+        <td class="thirdTableTd thirdTableTd2">5</td>
+        <td class="thirdTableTd thirdTableTd3">6</td>
+      </tr>
+      <tr class="thirdTableTr">
+        <td class="thirdTableTd thirdTableTd4">7</td>
+        <td class="thirdTableTd thirdTableTd5">8</td>
+        <td class="thirdTableTd thirdTableTd6">9</td>
+      </tr>
+      <tr class="thirdTableTr">
+        <td class="thirdTableTd thirdTableTd4">10</td>
+        <td class="thirdTableTd thirdTableTd5">11</td>
+        <td class="thirdTableTd thirdTableTd6">12</td>
+      </tr>
+    </table>
+<br>
+    <table class="fifthTable">
+      <tr class="fifthTableTr">
+        <th class="fifthTableTh fifthTableTh1">1</th>
+        <th class="fifthTableTh fifthTableTh3">2</th>
+        <th class="fifthTableTh fifthTableTh3">3</th>
+        <th class="fifthTableTh fifthTableTh3">4</th>
+      </tr>
+      <tr class="fifthTableTr">
+        <td class="fifthTableTd fifthTableTd1">5</td>
+        <td class="fifthTableTd fifthTableTd2">6</td>
+        <td class="fifthTableTd fifthTableTd3">7</td>
+        <td class="fifthTableTd fifthTableTd3">8</td>
+      </tr>
+      <tr class="fifthTableTr">
+        <td class="fifthTableTd fifthTableTd4">9</td>
+        <td class="fifthTableTd fifthTableTd5">10</td>
+        <td class="fifthTableTd fifthTableTd6">11</td>
+        <td class="fifthTableTd fifthTableTd6">12</td>
+      </tr>
+      <tr class="fifthTableTr">
+        <td class="fifthTableTd fifthTableTd4">13</td>
+        <td class="fifthTableTd fifthTableTd5">14</td>
+        <td class="fifthTableTd fifthTableTd6">15</td>
+        <td class="fifthTableTd fifthTableTd6">16</td>
+      </tr>
+    </table>
+
+    <h1>colgroup visibility: collapse</h1>
+    <table >
+
+        <colgroup>
+          <col span="1">
+          <col span="1" style="visibility: collapse">
+          <col span="3" style="background-color: #D6EEEE">
+        </colgroup>
+        <tr>
+        <th>MON</th>
+        <th>TUE</th>
+        <th>WED</th>
+        <th>THU</th>
+        <th>FRI</th>
+        <th>SAT</th>
+        <th>SUN</th>
+        </tr>
+        <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        </tr>
+        <tr>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td>
+        <td>13</td>
+        <td>14</td>
+        </tr>
+        <tr>
+        <td>15</td>
+        <td>16</td>
+        <td>17</td>
+        <td>18</td>
+        <td>19</td>
+        <td>20</td>
+        <td>21</td>
+        </tr>
+        <tr>
+        <td>22</td>
+        <td>23</td>
+        <td>24</td>
+        <td>25</td>
+        <td>26</td>
+        <td>27</td>
+        <td>28</td>
+        </tr>
+        </table>
+        <p>
+            The &lt;colgroup&gt; element should be used as a container for the column specifications. 
+            Each group are specified with a &lt;col&gt; element.
+            The span attribute specifies how many columns that gets the style. 
+            The style attribute specifies the style to give the columns. 
+            The &lt;colgroup&gt; tag must be a child of a &lt;table&gt; element and should be placed before any other table elements,
+            like &lt;thead&gt;, &lt;tr&gt;, &lt;td&gt; etc., but after the &lt;caption&gt; element, if present
+            If you want to style columns in the middle of a table, insert a "empty" &lt;col&gt; element (with no styles) for the columns before:
+            You can hide columns with the visibility: collapse property:    
+        </p>
+  </body>
+</html>
