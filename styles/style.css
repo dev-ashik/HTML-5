@@ -1,61 +1,47 @@
-.html {
+body {
+    color: #bbb8b8;
+    background-color: #1f1f1f;
+}
+
+.navber {
+    padding: 5px 5px;
     text-align: center;
-    margin: 0px 50px;
+    background-color: black;
 }
-
-.InlineElementstitle {
+.navber a {
+    margin: 2px 2px;
     color: white;
-    background-color: #625A99;
-    padding: 5px;
-}
-
-.InlineElementsTitle a{
     text-decoration: none;
-    color: white;
+}
+
+.typeDiv {
+    padding: 20px; 
+    margin: 10px 15%;
+    border: 2px solid #a3a3bd; 
+}
+hr {
+    color: lightgray;
+}
+.title {
+    margin: 0;
+    padding: 0;
+    color: #db6a4e;
+    text-align: center;
+}
+
+.title a {
+    margin: 0;
+    padding: 0;
+    color: #db6a4e;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 1px solid #db6a4e;
 }
 
 .content {
-    min-height: 100px;
-    margin-top: 10px;
     padding: 10px;
-}
-
-
-
-.InlineElements {
-    margin: 20px 5px;
-    border: 2px solid lightgreen;
-    border-radius: 10px;
-    
-}
-
-.InlineElementsTitle {
-    background-color: lightgreen;
-    border-radius: 5px 5px 0 0;
-}
-
-.InlineElementsTitle h1 {
-    margin: 0;
-}
-
-.BlockLevelElements {
-    margin: 20px 5px;
-    border: 2px solid #625A99;
-    border-radius: 10px;
-}
-
-.BlockLevelElementsTitle {
-    background-color: #625A99;
-    border-radius: 5px 5px 0 0;
-}
-
-.BlockLevelElements h1 {
-    margin: 0;
-}
-
-.BlockLevelElementsTitle a {
-    text-decoration: none;
-    color: white;
+    margin-top: 10px;
+    min-height: 100px;
 }
 
 .attribute {
@@ -67,15 +53,45 @@
 }
 
 .BackButton {
-    background-color: rebeccapurple;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    box-shadow: 1px 10px 10px lightgray;
     color: white;
-    margin-top: 50px;
+    padding: 5px 20px;
+    margin-top: 150px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    background-color: rebeccapurple;
+    box-shadow: 1px 1px 5px lightgray;
 }
 
-/* .colors h1 {
-    margin-bottom: 5px;
-} */
+.codeDiv {
+    margin: 30px;
+    color: #c2c0c0;
+    padding: 20px 30px;
+    background-color: #222835;
+    border: 2px solid #455366;
+}
+
+.codeColorGreen {
+    color: #00a651;
+}
+.codeColorDarkRed {
+    color: #a06090;
+    /* color: #7c496f; */
+}
+.codeColorYellow {
+    color: #ecf58a;
+}
+.codeColor4 {
+    color: #a783dc;
+}
+.codeColorWhite {
+    color: white;
+}
+
+.codeRunDiv {
+    margin: 30px;
+    color: #c2c0c0;
+    padding: 10px 20px;
+    background-color: #242831;
+    border: 2px solid #455366;
+}
