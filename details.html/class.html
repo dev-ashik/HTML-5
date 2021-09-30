@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <h2>class attribute</h2>
+    <p>Multiple HTML elements can share the same class. The 'class' attribute is often used to point to a class name in 
+        a style sheet. It can also be used by a JavaScript to access and manipulate elements with the specific class name.
+        The class attribute can be used on any HTML element. The class name is case sensitive! To create a class; write a 
+        period (.) character, followed by a class name. Then, define the CSS properties within curly braces {}. HTML elements 
+        can belong to more than one class. To define multiple classes, separate the class names with a space, e.g. <strong>&lt;div 
+        class="city main"&gt;</strong>. The element will be styled according to all the classes specified. Different HTML elements 
+        can point to the same class name.
+    </p>
+
+    <section class="codeRunDiv">
+        <div class="placeName">
+            <p>Yunnan</p>
+        </div>
+        <div class="placeName">
+            <p>Kunming</p>
+        </div>
+    </section>
+    <section class="codeDiv">
+        <pre>
+            &lt;<code class="codeColorDarkRed">div</code> <span class="codeColorGreen">class</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"first"</span>&gt;<br>
+            &lt;<code class="codeColorDarkRed">/div</code>&gt;<br>
+            &lt;<code class="codeColorDarkRed">div</code> <span class="codeColorGreen">class</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"first second"</span>&gt;<br>
+            &lt;<code class="codeColorDarkRed">/div</code>&gt;<br>
+
+            <span class="codeColorComment">&lt!-- Different HTML elements can point to the same class name. --&gt;<br></span>
+            &lt;<code class="codeColorDarkRed">p</code> <span class="codeColorGreen">class</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"first"</span>&gt; &lt;<code class="codeColorDarkRed">/p</code>&gt;<br>
+        </pre>
+    </section>
+    <p>The class name can also be used by JavaScript to perform certain tasks for specific elements. JavaScript can access elements with a specific class name with the getElementsByClassName() method:</p>
+    
+    <section class="codeDiv">
+        <pre>
+            &lt;<code class="codeColorDarkRed">script</code>&gt;
+                <code class="codeColorDarkRed">const</code> x = document.getElementsByClassName("dark");
+                <span class="codeColorComment">// x = night </span>
+            &lt;<code class="codeColorDarkRed">/script</code>&gt;<br>
+
+            &lt;<code class="codeColorDarkRed">div</code> <span class="codeColorGreen">class</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"dark"</span>&gt;
+                night
+            &lt;<code class="codeColorDarkRed">/div</code>&gt;<br>
+        </pre>
+    </section>
+
+
+
+    <hr><br>
+    <a class="BackButton" href="../index.html">Back to</a>
+</body>
+</html>
