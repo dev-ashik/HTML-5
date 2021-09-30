@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>image map</title>
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body style="background-color: #1f1f1f; color: #fefefe;">
     <hr>
@@ -17,18 +18,32 @@
         <!-- <area shape="cercle" coords="700, 700, 50" href="" alt=""> -->
         <area shape="" coords="" href="" alt="">
     </map>
+    <section class="codeRunDiv">
+        <pre>
+            &lt;<span class="codeColorDarkRed">img</span> <span class="codeColorGreen">src</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"../picture/imageMap.jpg"</span> <span class="codeColorGreen">alt</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"imageMap"</span> <span class="codeColorGreen">usemap</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"#testmap"</span>&gt;
+
+            &lt;<span class="codeColorDarkRed">map</span> <span class="codeColorGreen">name</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"testmap"</span>&gt;
+                &lt;<span class="codeColorDarkRed">area</span> <span class="codeColorGreen">shape</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"rect"</span> <span class="codeColorGreen">coords</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"250, 264, 630, 607"</span> <span class="codeColorGreen">href</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"./laptop.html"</span> <span class="codeColorGreen">alt</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"laptop"</span>&gt;
+                &lt;<span class="codeColorDarkRed">area</span> <span class="codeColorGreen">shape</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"circle"</span> <span class="codeColorGreen">coords</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"740, 566, 38"</span> <span class="codeColorGreen">href</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"./mouse.html"</span> <span class="codeColorGreen">alt</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"mouse"</span>&gt;
+                &lt;<span class="codeColorDarkRed">area</span> <span class="codeColorGreen">shape</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">""</span> <span class="codeColorGreen">coords</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">""</span> <span class="codeColorGreen">href</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">""</span> <span class="codeColorGreen">alt</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">""</span>&gt;
+            &lt;<span class="codeColorDarkRed">/map</span>&gt;
+        </pre>
+    </section>
+
     <p> The only difference from other images is that you must add a usemap attribute. The usemap value starts with a hash tag # followed by the name of the image map, and is used to create a relationship between the image and the image map. You must also define some coordinates to be able to place the clickable area onto the image. The coordinates for shape="rect" come in pairs, one for the x-axis and one for the y-axis.
 
         So, the coordinates 34,44 is located 34 pixels from the left margin and 44 pixels from the top:</p>
     <h3>Shap</h3>
-    <ul>
-        <li>rect - defines a rectangular region</li>
-        <li></li>
-        <li>circle - defines a circular region</li>
-        <li>To add a circle area, first locate the coordinates of the center of the circle:</li>
-        <li>defines a polygonal region</li>
-        <li>default - defines the entire region</li>
-    </ul>
+    <dl>
+        <dt class="codeColorDarkRed">rect</dt>
+        <dd>- defines a rectangular region</dd>
+        <dt class="codeColorDarkRed">circle</dt>
+        <dd>- defines a circular region</dd>
+        <dt class="codeColorDarkRed">poly</dt>
+        <dd>- defines a polygonal region</dd>
+        <dt class="codeColorDarkRed">default</dt>
+        <dd>- defines the entire region</dd>
+    </dl>
     <hr><br>
     <a class="BackButton" href="../index.html">Back to</a>
 </body>

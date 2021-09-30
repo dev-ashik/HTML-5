@@ -6,16 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Attributes</title>
     <link rel="stylesheet" href="../../styles/style.css">
+    <style>
+        .placeName {
+            width: 200px;
+            height: 200px;
+            color: black;
+            background-color: limegreen;
+        }
+    </style>
 </head>
 <body class="attribute" style="background-color: #1f1f1f; color: #fefefe;">
     <h1 class="Title">Attributes</h1>
-    <h5>href, src, alt, height, width, <a href="">style</a></h5>
+    <h5>class, href, src, alt, height, width, <a href="">style</a></h5>
     <!-- Always Quote Attribute Values -->
     <a href="#">FaceBook</a>
     <br>
     <img class="attribute_image" src="../../picture/html5logo.png" alt="img" height="100px" width="100px">
     <p style="color:red;">Here is Style, color red.</p>
     <p title="I'm a tooltip"> Here title Attribute.</p>
+    
+    <hr>
+    <h2>class attribute</h2>
+    <a class="BackButton" href="./class.html">class</a>
+    <p>Multiple HTML elements can share the same class. The 'class' attribute is often used to point to a class name in 
+        a style sheet. It can also be used by a JavaScript to access and manipulate elements with the specific class name.
+        The class attribute can be used on any HTML element. The class name is case sensitive! To create a class; write a 
+        period (.) character, followed by a class name. Then, define the CSS properties within curly braces {}. HTML elements 
+        can belong to more than one class. To define multiple classes, separate the class names with a space, e.g. <strong>&lt;div 
+        class="city main"&gt;</strong>. The element will be styled according to all the classes specified. Different HTML elements 
+        can point to the same class name.
+    </p>
+    <section class="codeDiv">
+        <pre>
+            &lt;<code class="codeColorDarkRed">script</code>&gt;
+                <code class="codeColorDarkRed">const</code> x = document.getElementsByClassName("dark");
+                <span class="codeColorComment">// x = night </span>
+            &lt;<code class="codeColorDarkRed">/script</code>&gt;<br>
+
+            &lt;<code class="codeColorDarkRed">div</code> <span class="codeColorGreen">class</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"dark"</span>&gt;
+                night
+            &lt;<code class="codeColorDarkRed">/div</code>&gt;<br>
+        </pre>
+    </section>
+    
+
+    <hr>
+    <h2>id attribute</h2>
+    <a class="BackButton" href="./id.html">id</a>
+    <p>Multiple HTML elements can share the same class. The 'class' attribute is often used to point to a class name in 
+        a style sheet. It can also be used by a JavaScript to access and manipulate elements with the specific class name.
+        The class attribute can be used on any HTML element. The class name is case sensitive! To create a class; write a 
+        period (.) character, followed by a class name. Then, define the CSS properties within curly braces {}. HTML elements 
+        can belong to more than one class. To define multiple classes, separate the class names with a space, e.g. <strong>&lt;div 
+        class="city main"&gt;</strong>. The element will be styled according to all the classes specified. Different HTML elements 
+        can point to the same class name.
+    </p>
+    <section class="codeDiv">
+        <pre>
+            &lt;<code class="codeColorDarkRed">script</code>&gt;
+                <code class="codeColorDarkRed">const</code> x = document.getElementsByClassName("lion");
+                <span class="codeColorComment">// x = night </span>
+            &lt;<code class="codeColorDarkRed">/script</code>&gt;<br>
+
+            &lt;<code class="codeColorDarkRed">div</code> <span class="codeColorGreen">id</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"lion"</span>&gt;
+                night
+            &lt;<code class="codeColorDarkRed">/div</code>&gt;<br>
+        </pre>
+    </section>
+    
+    
     
     <hr><br>
     <a class="BackButton" href="../index.html">Back to</a>
