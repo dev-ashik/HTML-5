@@ -27,17 +27,108 @@
             &lt;<span class="codeColorDarkRed">ol</span>&gt;<br>
         </code>
     </section>
-    <p>The list items will be marked with bullets (small black circles) by default</p>
+    <p>The list items will be marked with numbers by default</p>
     <p>Defines an ordered list &lt;ol&gt;</p>
     <p>Defines a list item &lt;li&gt;</p>
-    <hr>
+    <p>
+        type="1" ===> The list items will be numbered with numbers (default)<br>
+        type="A" ===> The list items will be numbered with uppercase letters<br>
+        type="a" ===> The list items will be numbered with lowercase letters<br>
+        type="I" ===> The list items will be numbered with uppercase roman numbers<br>
+        type="i" ===> The list items will be numbered with lowercase roman numbers<br>
+    </p>
+    <section class="codeRunDiv">
+        <!-- <ol>
+            <li>first</li>
+            <li>second</li>
+        </ol> -->
+        <ol type="1">
+            <li>first</li>
+            <li>second</li>
+        </ol>  
+        <ol type="A">
+            <li>first</li>
+            <li>second</li>
+        </ol>  
+        <ol type="a">
+            <li>first</li>
+            <li>second</li>
+        </ol>  
+        <ol type="I">
+            <li>first</li>
+            <li>second</li>
+        </ol>  
+        <ol type="i">
+            <li>first</li>
+            <li>second</li>
+        </ol>  
+    </section>
+    <section class="codeDiv">
+    <pre>
+    &lt;<span class="codeColorDarkRed">ol</span>&gt;
+        &lt;<span class="codeColorDarkRed">li</span>&gt;first&lt;<span class="codeColorDarkRed">li</span>&gt;
+        &lt;<span class="codeColorDarkRed">li</span>&gt;second&lt;<span class="codeColorDarkRed">li</span>&gt;
+    &lt;<span class="codeColorDarkRed">/ol</span>&gt;
 
+    &lt;<span class="codeColorDarkRed">ol</span> <span class="codeColorGreen">type</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"1"</span>&gt;
+        &lt;<span class="codeColorDarkRed">li</span>&gt;first&lt;<span class="codeColorDarkRed">li</span>&gt;
+        &lt;<span class="codeColorDarkRed">li</span>&gt;second&lt;<span class="codeColorDarkRed">li</span>&gt;
+    &lt;<span class="codeColorDarkRed">/ol</span>&gt;
+
+    &lt;<span class="codeColorDarkRed">ol</span> <span class="codeColorGreen">type</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"A"</span>&gt;
+        &lt;<span class="codeColorDarkRed">li</span>&gt;first&lt;<span class="codeColorDarkRed">li</span>&gt;
+        &lt;<span class="codeColorDarkRed">li</span>&gt;second&lt;<span class="codeColorDarkRed">li</span>&gt;
+    &lt;<span class="codeColorDarkRed">/ol</span>&gt;
+
+    &lt;<span class="codeColorDarkRed">ol</span> <span class="codeColorGreen">type</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"a"</span>&gt;
+        &lt;<span class="codeColorDarkRed">li</span>&gt;first&lt;<span class="codeColorDarkRed">li</span>&gt;
+        &lt;<span class="codeColorDarkRed">li</span>&gt;second&lt;<span class="codeColorDarkRed">li</span>&gt;
+    &lt;<span class="codeColorDarkRed">/ol</span>&gt;
+
+    &lt;<span class="codeColorDarkRed">ol</span> <span class="codeColorGreen">type</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"I"</span>&gt;
+        &lt;<span class="codeColorDarkRed">li</span>&gt;first&lt;<span class="codeColorDarkRed">li</span>&gt;
+        &lt;<span class="codeColorDarkRed">li</span>&gt;second&lt;<span class="codeColorDarkRed">li</span>&gt;
+    &lt;<span class="codeColorDarkRed">/ol</span>&gt;
+
+    &lt;<span class="codeColorDarkRed">ol</span> <span class="codeColorGreen">type</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"i"</span>&gt;
+        &lt;<span class="codeColorDarkRed">li</span>&gt;first&lt;<span class="codeColorDarkRed">li</span>&gt;
+        &lt;<span class="codeColorDarkRed">li</span>&gt;second&lt;<span class="codeColorDarkRed">li</span>&gt;
+    &lt;<span class="codeColorDarkRed">/ol</span>&gt;
+    </pre>
+    </section>
+
+    <h3><strong>Control List Counting</strong></h3>
+    <p>By default, an ordered list will start counting from 1. If you want to start counting from a specified number, you can use the start attribute:</p>
+    <section class="codeRunDiv">  
+        <ol start="50">
+            <li>first</li>
+            <li>second</li>
+        </ol>  
+        <ol type="I" start="10">
+            <li>first</li>
+            <li>second</li>
+        </ol>  
+    </section>
+    <section class="codeDiv">
+        <pre>
+        &lt;<span class="codeColorDarkRed">ol</span> <span class="codeColorGreen">start</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"50"</span>&gt;
+            &lt;<span class="codeColorDarkRed">li</span>&gt;first&lt;<span class="codeColorDarkRed">li</span>&gt;
+            &lt;<span class="codeColorDarkRed">li</span>&gt;second&lt;<span class="codeColorDarkRed">li</span>&gt;
+        &lt;<span class="codeColorDarkRed">/ol</span>&gt;
+    
+        &lt;<span class="codeColorDarkRed">ol</span> <span class="codeColorGreen">type</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"I"</span><span class="codeColorGreen">start</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"10"</span>&gt;
+            &lt;<span class="codeColorDarkRed">li</span>&gt;first&lt;<span class="codeColorDarkRed">li</span>&gt;
+            &lt;<span class="codeColorDarkRed">li</span>&gt;second&lt;<span class="codeColorDarkRed">li</span>&gt;
+        &lt;<span class="codeColorDarkRed">/ol</span>&gt;
+        </pre>
+        </section>
+
+    <hr>
+<!-- ______________________________________________________________________________________________ -->
 
 
 
     <h2>An unordered HTML list</h2>
-    <p>The list items will be marked with numbers by default</p>
-    <p>Defines an unordered list &lt;ul&gt;</p>
     <section class="codeRunDiv">
     <ul>
         <li>First item</li>
@@ -56,6 +147,9 @@
             &lt;<code class="codeColorDarkRed">ul</code>&gt;<br>
         </code>
     </section>
+    <p>The list items will be marked with bullets (small black circles) by default</p>
+    <p>Defines an unordered list &lt;ul&gt;</p>
+
     <h3>Unordered HTML List marker</h3>
     <section class="codeRunDiv">
     <ul style="list-style-type: disc;">
@@ -88,6 +182,9 @@
             &lt;<span class="codeColorDarkRed">ul</span>&gt;<br>
         </code>
     </section>
+
+
+    <!-- ________________________________________________________________________________ -->
 
     <h3>Nested HTML Lists</h3>
     <section class="codeRunDiv">
@@ -133,7 +230,7 @@
     
 
     <hr>
-
+<!-- __________________________________________________________________________________ -->
 
 
 
@@ -157,9 +254,14 @@
             &lt;<code class="codeColorDarkRed">dl</code>&gt;<br>
         </code>
     </section>
+    <p>The &lt;<code class="codeColorDarkRed">dl</code>&gt; tag defines the description list, the &lt;<code class="codeColorDarkRed">dt</code>&gt; tag defines the term (name), and the &lt;<code class="codeColorDarkRed">dd</code>&gt; tag describes each term:</p>
     <p>Defines a description List &lt;dl&gt;</p>
     <p>Defines a term in a description list &lt;dt&gt;</p>
     <p>Describes the term in a description list &lt;dd&gt;</p>
+
+
+    <hr><br>
+    <a class="BackButton" href="../index.html">Back to</a>
     
 </body>
 </html>

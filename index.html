@@ -32,12 +32,7 @@
         </div>
     </div>
     <section class="codeRunDiv">
-        <dl>
-            <dt>First item</dt>
-            <dd>-Second item</dd>
-            <dt>Third item</dt>
-            <dd>-Fourth item</dd>
-        </dl>
+        output
     </section>
     <section class="codeDiv">
         <code>
@@ -110,6 +105,27 @@
             <bdo dir="rtl">This text will be written from right to left</bdo>
         </div>
     </div>
+    <div class="typeDiv">
+        <h3 class="title" >block-level elements</h3><hr>
+        <div  class="content">
+            <p>Here are the block-level elements in HTML:</p>
+            
+                <section class="codeDiv">
+
+                        &lt;<code class="codeColorDarkRed">address</code>&gt;  &lt;<code class="codeColorDarkRed">article</code>&gt;  &lt;<code class="codeColorDarkRed">aside</code>&gt;<br>
+                        &lt;<code class="codeColorDarkRed">code</code>&gt;  &lt;<code class="codeColorDarkRed">blockquote</code>&gt;  &lt;<code class="codeColorDarkRed">dd</code>&gt;<br>
+                        &lt;<code class="codeColorDarkRed">div</code>&gt;  &lt;<code class="codeColorDarkRed">dl</code>&gt;  &lt;<code class="codeColorDarkRed">dt</code>&gt;<br>
+                        &lt;<code class="codeColorDarkRed">fieldset</code>&gt;  &lt;<code class="codeColorDarkRed">figcaption</code>&gt;  &lt;<code class="codeColorDarkRed">figure</code>&gt;<br>
+                        &lt;<code class="codeColorDarkRed">footer</code>&gt;  &lt;<code class="codeColorDarkRed">form</code>&gt;  &lt;<code class="codeColorDarkRed">h1</code>&gt;
+                        &lt;<code class="codeColorDarkRed">h6</code>&gt;  &lt;<code class="codeColorDarkRed">header</code>&gt;  &lt;<code class="codeColorDarkRed">hr</code>&gt;<br>
+                        &lt;<code class="codeColorDarkRed">li</code>&gt;  &lt;<code class="codeColorDarkRed">main</code>&gt;  &lt;<code class="codeColorDarkRed">nav</code>&gt;<br>
+                        &lt;<code class="codeColorDarkRed">noscript</code>&gt;  &lt;<code class="codeColorDarkRed">ol</code>&gt;  &lt;<code class="codeColorDarkRed">p</code>&gt;<br>
+                        &lt;<code class="codeColorDarkRed">pre</code>&gt;   &lt;<code class="codeColorDarkRed">section</code>&gt;  &lt;<code class="codeColorDarkRed">table</code>&gt;<br>
+                        &lt;<code class="codeColorDarkRed">tfoot</code>&gt;   &lt;<code class="codeColorDarkRed">ul</code>&gt;  &lt;<code class="codeColorDarkRed">video</code>&gt;<br>
+                    </code>
+                </section>        
+        </div>
+    </div>
     </section>
     <!-- B end -->
 
@@ -146,6 +162,13 @@
         <h3 class="title"><a href="./details.html/css.html">CSS</a></h3><hr>
         <div  class="content">
             <h2>Cascading Style Sheets (CSS) is used to format the layout of a webpage.</h2>
+        </div>
+    </div>
+    </section>
+    <div class="typeDiv">
+        <h3 class="title"><a href="./details.html/class.html">class</a></h3><hr>
+        <div  class="content">
+            class
         </div>
     </div>
     </section>
@@ -225,16 +248,117 @@
     <!-- I start -->
     <section id="i">
     <div class="typeDiv">
-        <h3 class="title"><a href="./details.html/image.html">Images <a href="./details.html/imageMap.html">Image Map</a></a></h3><hr>
+        <h3 class="title"><a href="./details.html/image.html">Images </a> &nbsp; <a href="./details.html/imageMap.html">Image Map</a></h3><hr>
         <div  class="content">
-            <img src="./picture/html5logo.png" alt="W3Schools.com" width="140" height="140">
-            <!-- <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"> -->
+            <section class="codeRunDiv">
+                <img src="./picture/html5logo.png" alt="W3Schools.com" width="140" height="140">
+                <!-- <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"> -->
+            </section>
             <p>
                 The &lt;img&gt; tag is empty, it contains attributes only, and does not have a closing tag.
             </p>
-            <a href="./details.html/imageMap.html">Image Map</a>
+
+            <hr>
+            <section class="codeRunDiv">
+                <img src="../picture/imageMap.jpg" alt="imageMap" usemap="#testmap" height="350" width="350">
+
+                <map name="testmap">
+                    <!-- <area shape="rect" coords="from-left, from-top, 270, 607" href="laptop.htm" alt=""> -->
+                    <area shape="rect" coords="250, 264, 630, 607" href="./laptop.html" alt="laptop">
+                    <area shape="circle" coords="740, 566, 38" href="./mouse.html" alt="mouse">
+                    <!-- <area shape="cercle" coords="700, 700, 50" href="" alt=""> -->
+                    <area shape="" coords="" href="" alt="">
+                </map>
+            </section>
+            
+            <section class="codeDiv">
+                <pre>
+                &lt;<span class="codeColorDarkRed">img</span> <span class="codeColorGreen">src</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"../picture/imageMap.jpg"</span> <span class="codeColorGreen">alt</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"imageMap"</span> <span class="codeColorGreen">usemap</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"#testmap"</span>&gt;
+    
+                &lt;<span class="codeColorDarkRed">map</span> <span class="codeColorGreen">name</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"testmap"</span>&gt;
+                    &lt;<span class="codeColorDarkRed">area</span> <span class="codeColorGreen">shape</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"rect"</span> <span class="codeColorGreen">coords</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"250, 264, 630, 607"</span> <span class="codeColorGreen">href</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"./laptop.html"</span> <span class="codeColorGreen">alt</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"laptop"</span>&gt;
+                    &lt;<span class="codeColorDarkRed">area</span> <span class="codeColorGreen">shape</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"circle"</span> <span class="codeColorGreen">coords</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"740, 566, 38"</span> <span class="codeColorGreen">href</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"./mouse.html"</span> <span class="codeColorGreen">alt</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"mouse"</span>&gt;
+                    &lt;<span class="codeColorDarkRed">area</span> <span class="codeColorGreen">shape</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">""</span> <span class="codeColorGreen">coords</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">""</span> <span class="codeColorGreen">href</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">""</span> <span class="codeColorGreen">alt</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">""</span>&gt;
+                &lt;<span class="codeColorDarkRed">/map</span>&gt;
+                </pre>
+            </section>
+            <a class="BackButton" href="./details.html/image.html">Images </a> &nbsp;&nbsp; <a class="BackButton" href="./details.html/imageMap.html">Image Map</a> 
         </div>
     </div>
+    <div class="typeDiv">
+        <h3 class="title"><a href="/#">Inline Elements</a></h3><hr>
+        <div  class="content">
+            <div  class="content">
+                <p>Here are the inline elements in HTML:</p>
+                <p>An inline element does not start on a new line. An inline element only takes up as much width as necessary. An inline element cannot contain a block-level element!</p>
+                <section class="codeDiv">
+                    <code>
+                        &lt;<code class="codeColorDarkRed">a</code>&gt;  &lt;<code class="codeColorDarkRed">abbr</code>&gt;  &lt;<code class="codeColorDarkRed">acronym</code>&gt;<br>
+                        &lt;<code class="codeColorDarkRed">b</code>&gt;  &lt;<code class="codeColorDarkRed">bdo</code>&gt;  &lt;<code class="codeColorDarkRed">big</code>&gt;<br>
+                        &lt;<code class="codeColorDarkRed">br</code>&gt;  &lt;<code class="codeColorDarkRed">button</code>&gt;  &lt;<code class="codeColorDarkRed">cite</code>&gt;<br>
+                        &lt;<code class="codeColorDarkRed">code</code>&gt;  &lt;<code class="codeColorDarkRed">dfn</code>&gt;  &lt;<code class="codeColorDarkRed">em</code>&gt;<br>
+                        &lt;<code class="codeColorDarkRed">i</code>&gt;  &lt;<code class="codeColorDarkRed">img</code>&gt;  &lt;<code class="codeColorDarkRed">input</code>&gt;
+                        &lt;<code class="codeColorDarkRed">label</code>&gt;  &lt;<code class="codeColorDarkRed">map</code>&gt;  &lt;<code class="codeColorDarkRed">object</code>&gt;<br>
+                        &lt;<code class="codeColorDarkRed">output</code>&gt;  &lt;<code class="codeColorDarkRed">q</code>&gt;  &lt;<code class="codeColorDarkRed">samp</code>&gt;<br>
+                        &lt;<code class="codeColorDarkRed">script</code>&gt;  &lt;<code class="codeColorDarkRed">select</code>&gt;  &lt;<code class="codeColorDarkRed">small</code>&gt;<br>
+                        &lt;<code class="codeColorDarkRed">span</code>&gt;   &lt;<code class="codeColorDarkRed">strong</code>&gt;  &lt;<code class="codeColorDarkRed">sub</code>&gt;<br>
+                        &lt;<code class="codeColorDarkRed">sup</code>&gt;   &lt;<code class="codeColorDarkRed">textarea</code>&gt;  &lt;<code class="codeColorDarkRed">time</code>&gt;<br>
+                        &lt;<code class="codeColorDarkRed">tt</code>&gt;   &lt;<code class="codeColorDarkRed">var</code>&gt; <br>
+                    </code>
+                </section>        
+            </div>
+
+        </div>
+    </div>
+
+    <div class="typeDiv">
+        <h3 class="title"><a href="./details.html/id.html">id attribute</a></h3><hr>
+        <div  class="content">
+            <div  class="content">
+                <p>
+                    The HTML id attribute is used to specify a unique id for an HTML element. You cannot have more than one element \
+                    with the same id in an HTML document. the id attribute must be unique within the HTML document. The id name is case 
+                    sensitive! The id name must contain at least one character, cannot start with a number, and must not contain 
+                    whitespaces (spaces, tabs, etc.).
+                </p>
+                <section class="codeDiv">
+                    <pre>
+                        &lt;<code class="codeColorDarkRed">script</code>&gt;
+                            <code class="codeColorDarkRed">const</code> x = document.getElementById("lion");
+                            <span class="codeColorComment">// x = lion </span>
+                        &lt;<code class="codeColorDarkRed">/script</code>&gt;<br>
+            
+                        &lt;<code class="codeColorDarkRed">div</code> <span class="codeColorGreen">id</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"lion"</span>&gt;
+                            lion
+                        &lt;<code class="codeColorDarkRed">/div</code>&gt;<br>
+                    </pre>
+                </section>      
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="typeDiv">
+        <h3 class="title"><a href="./details.html/iframeSyntax.html">Iframe Syntax</a></h3><hr>
+        <div  class="content">
+            <div  class="content">
+                <p>The HTML <code>&lt;iframe&gt;</code> tag specifies an inline frame. An HTML iframe is used to display a web page within a web page.</p>
+                <!-- <iframe src="url" title="description"></iframe> -->
+                <section class="codeDiv">
+                    <code>
+                        <!-- height="200" width="300" -->
+                        &lt;<code class="codeColorDarkRed">iframe</code> <span class="codeColorGreen">src</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"url"</span> <span class="codeColorGreen">title</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"description"</span> <span class="codeColorGreen">height</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"200"</span> <span class="codeColorGreen">width</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"300"</span>&gt; &lt;<code class="codeColorDarkRed">/iframe</code>&gt;<br>
+                    </code>
+                </section> 
+                <iframe src="https://hotel-night-queen.netlify.app/" style="border: none;" title="github" height="400px" width="90%"></iframe>   
+            </div>
+
+        </div>
+    </div>
+
+
+    
     </section>
     <!-- I end -->
 
@@ -277,20 +401,90 @@
     <div class="typeDiv">
         <h3 class="title"><a href="./details.html/lists.html">Lists</a></h3><hr>
         <div  class="content">
-            <p>An unordered HTML list:</p>
-            <ol>
-                <li>First item</li>
-                <li>Second item</li>
-                <li>Third item</li>
-                <li>Fourth item</li>
-            </ol>
-            <p>An ordered HTML list:</p>
-            <ul>
-                <li>First item</li>
-                <li>Second item</li>
-                <li>Third item</li>
-                <li>Fourth item</li>
-            </ul>
+            <section class="codeRunDiv">
+                <p><strong>An unordered HTML list:</strong></p>
+                <ol>
+                    <li>First item</li>
+                    <li>Second item</li>
+                    <li>Third item</li>
+                    <li>Fourth item</li>
+                </ol>
+                <p><strong>An ordered HTML list:</strong></p>
+                <ul>
+                    <li>First item</li>
+                    <li>Second item</li>
+                    <li>Third item</li>
+                    <li>Fourth item</li>
+                </ul>
+            </section>
+
+            <section class="codeRunDiv">
+                <p><strong>Control List Counting</strong></p>
+                <ol start="50">
+                    <li>first</li>
+                    <li>second</li>
+                </ol>  
+                <ol type="I" start="10">
+                    <li>first</li>
+                    <li>second</li>
+                </ol> 
+            </section>
+            <section class="codeDiv">
+            <pre>
+            &lt;<span class="codeColorDarkRed">ol</span> <span class="codeColorGreen">start</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"50"</span>&gt;
+                &lt;<span class="codeColorDarkRed">li</span>&gt;first&lt;<span class="codeColorDarkRed">li</span>&gt;
+                &lt;<span class="codeColorDarkRed">li</span>&gt;second&lt;<span class="codeColorDarkRed">li</span>&gt;
+            &lt;<span class="codeColorDarkRed">/ol</span>&gt;
+        
+            &lt;<span class="codeColorDarkRed">ol</span> <span class="codeColorGreen">type</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"I"</span><span class="codeColorGreen">start</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"10"</span>&gt;
+                &lt;<span class="codeColorDarkRed">li</span>&gt;first&lt;<span class="codeColorDarkRed">li</span>&gt;
+                &lt;<span class="codeColorDarkRed">li</span>&gt;second&lt;<span class="codeColorDarkRed">li</span>&gt;
+            &lt;<span class="codeColorDarkRed">/ol</span>&gt;
+            </pre>
+            </section>
+
+            <section class="codeRunDiv">
+                <p><strong>Nested HTML Lists</strong></p>
+                <ul>
+                    <li>Ashik</li>
+                    <li>hobby
+                        <ul>
+                            <li>watching movie</li>
+                            <li>Gaming</li>
+                        </ul>
+                    </li>
+                </ul> 
+            </section>
+            <section class="codeDiv">
+            <pre>
+            &lt;<span class="codeColorDarkRed">ul</span>&gt;
+                &lt;<span class="codeColorDarkRed">li</span>&gt;Ashik&lt;<span class="codeColorDarkRed">li</span>&gt;
+                &lt;<span class="codeColorDarkRed">li</span>&gt;hobby
+                    &lt;<span class="codeColorDarkRed">ul</span>&gt;
+                        &lt;<span class="codeColorDarkRed">li</span>&gt;watching movie&lt;<span class="codeColorDarkRed">li</span>&gt;
+                        &lt;<span class="codeColorDarkRed">li</span>&gt;Gaming&lt;<span class="codeColorDarkRed">li</span>&gt;
+                    &lt;<span class="codeColorDarkRed">ul</span>&gt;
+                &lt;<span class="codeColorDarkRed">li</span>&gt;
+            &lt;<span class="codeColorDarkRed">/ul</span>&gt;
+            </pre>
+            </section>
+            <p>A list item (&lt; li &gt;) can contain a new list, and other HTML elements, like images and links, etc.</p>
+
+
+            <section class="codeRunDiv">
+                <dl>
+                    <dt>name</dt>
+                    <dd>- my name</dd>
+                </dl>
+            </section>
+            <section class="codeDiv">
+            <pre>
+            &lt;<span class="codeColorDarkRed">dl</span>&gt;
+                &lt;<span class="codeColorDarkRed">dt</span>&gt;name&lt;<span class="codeColorDarkRed">dt</span>&gt;
+                &lt;<span class="codeColorDarkRed">dd</span>&gt;- my name&lt;<span class="codeColorDarkRed">dd</span>&gt;
+            &lt;<span class="codeColorDarkRed">/dt</span>&gt;
+            </pre>
+            </section>
         </div>
     </div> 
     </section>
@@ -363,7 +557,19 @@
             </picture>
         </div>
     </div>
+    <div class="typeDiv">
+        <h3 class="title">pre</h3><hr>
+        <div  class="content">
+            <pre>
+                <!-- preformate -->
+                hello
+                    world.
+            </pre>
+        </div>
+    </div>
     </section>
+
+    
     <!-- P end -->
 
     <!-- Q start -->

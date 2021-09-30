@@ -36,6 +36,7 @@ hr {
     text-align: center;
     text-decoration: none;
     border-bottom: 1px solid #db6a4e;
+    font-size: 30px;
 }
 
 .content {
@@ -45,7 +46,7 @@ hr {
 }
 
 .attribute {
-    text-align: center;
+    /* text-align: center; */
 }
 
 .attribute_image {
@@ -68,18 +69,32 @@ hr {
     color: #c2c0c0;
     padding: 20px 30px;
     background-color: #222835;
-    border: 2px solid #455366;
+    border: 2px solid #723b5d;
+    margin-top: 1px;
+}
+
+
+.codeRunDiv {
+    margin: 30px;
+    margin-bottom: 0;
+    color: #c2c0c0;
+    padding: 10px 20px;
+    background-color: #242831;
+    border: 2px solid #4c5f79;
+    font-size: 20px;
 }
 
 .codeColorGreen {
-    color: #00a651;
+    /* color: #00a651; */
+    color: #19c26a;
 }
 .codeColorDarkRed {
-    color: #a06090;
+    color: #b94c9e;
     /* color: #7c496f; */
 }
 .codeColorYellow {
-    color: #ecf58a;
+    /* color: #ecf58a; */
+    color: #cbd36f;
 }
 .codeColor4 {
     color: #a783dc;
@@ -87,11 +102,6 @@ hr {
 .codeColorWhite {
     color: white;
 }
-
-.codeRunDiv {
-    margin: 30px;
-    color: #c2c0c0;
-    padding: 10px 20px;
-    background-color: #242831;
-    border: 2px solid #455366;
+.codeColorComment {
+    color: rgb(126, 114, 114);
 }
