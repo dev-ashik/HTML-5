@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image map</title>
+</head>
+<body style="background-color: #1f1f1f; color: #fefefe;">
+    <hr>
+    <img src="../picture/imageMap.jpg" alt="imageMap" usemap="#testmap" >
+
+    <map name="testmap">
+        <!-- <area shape="rect" coords="from-left, from-top, 270, 607" href="laptop.htm" alt=""> -->
+        <area shape="rect" coords="250, 264, 630, 607" href="./laptop.html" alt="laptop">
+        <area shape="circle" coords="740, 566, 38" href="./mouse.html" alt="mouse">
+        <!-- <area shape="cercle" coords="700, 700, 50" href="" alt=""> -->
+        <area shape="" coords="" href="" alt="">
+    </map>
+    <p> The only difference from other images is that you must add a usemap attribute. The usemap value starts with a hash tag # followed by the name of the image map, and is used to create a relationship between the image and the image map. You must also define some coordinates to be able to place the clickable area onto the image. The coordinates for shape="rect" come in pairs, one for the x-axis and one for the y-axis.
+
+        So, the coordinates 34,44 is located 34 pixels from the left margin and 44 pixels from the top:</p>
+    <h3>Shap</h3>
+    <ul>
+        <li>rect - defines a rectangular region</li>
+        <li></li>
+        <li>circle - defines a circular region</li>
+        <li>To add a circle area, first locate the coordinates of the center of the circle:</li>
+        <li>defines a polygonal region</li>
+        <li>default - defines the entire region</li>
+    </ul>
+    <hr><br>
+    <a class="BackButton" href="../index.html">Back to</a>
+</body>
+</html>
