@@ -243,6 +243,63 @@
         </div>
     </div>
     </section>
+    <div class="typeDiv">
+        <h3 class="title">The Head Element</h3><hr>
+        <div  class="content">
+            <p>The HTML <code>&lt;head&gt;</code> element is a container for the following elements:</p>
+            <code>
+                &lt;<span class="codeColorDarkRed">title</span>&gt;, &lt;<span class="codeColorDarkRed">style</span>&gt;, &lt;<span class="codeColorDarkRed">meta</span>&gt;, &lt;<span class="codeColorDarkRed">link</span>&gt;, &lt;<span class="codeColorDarkRed">script</span>&gt;, and &lt;<span class="codeColorDarkRed">base</span>&gt;
+                
+            </code>
+            <p>HTML metadata is data about the HTML document. Metadata is not displayed. Metadata typically define the document title, character set, styles, scripts, and other meta information. </p>
+
+            <h3>title</h3>
+            <p>The "title" element defines the title of the document. The title must be text-only, and it is shown in the browser's title bar or in the page's tab. The "title" element is required in HTML documents! The contents of a page title is very important for search engine optimization (SEO)! The page title is used by search engine algorithms to decide the order when listing pages in search results. </p>
+
+            <h3>style</h3>
+            <p>The "style" element is used to define style information for a single HTML page:</p>
+            
+            <h3>link</h3>
+            <p>The "link" element defines the relationship between the current document and an external resource. </p>
+
+            <h3>meta</h3>
+            <p>The "meta" element is typically used to specify the character set, page description, keywords, author of the document, and viewport settings. The metadata will not be displayed on the page, but are used by browsers (how to display content or reload page), by search engines (keywords), and other web services. </p>
+
+            <h3>Examples</h3>
+            <section class="codeDiv">
+                <code>
+                    <pre>
+                    <span class="codeColorComment">Define the character set used:</span><br>
+                    &lt;<span class="codeColorDarkRed">meta</span> <span class="codeColorGreen">charset</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"UTF-8"</span> &gt;
+
+
+                    <span class="codeColorComment">Define keywords for search engines:</span><br>
+                    &lt;<span class="codeColorDarkRed">meta</span> <span class="codeColorGreen">name</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"keywords"</span><span class="codeColorGreen">content</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"HTML, CSS, JavaScript"</span> &gt;
+
+
+                    <span class="codeColorComment">Define a description of your web page:</span><br>
+                    &lt;<span class="codeColorDarkRed">meta</span> <span class="codeColorGreen">name</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"description"</span><span class="codeColorGreen">content</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"Free Web tutorials"</span> &gt;
+
+
+                    <span class="codeColorComment">Define the author of a page:</span><br>
+                    &lt;<span class="codeColorDarkRed">meta</span> <span class="codeColorGreen">name</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"author"</span><span class="codeColorGreen">content</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"Md Ashik Mahmud"</span> &gt;
+
+
+                    <span class="codeColorComment">Refresh document every 30 seconds:</span><br>
+                    &lt;<span class="codeColorDarkRed">meta</span> <span class="codeColorGreen">http-equiv</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"refresh"</span><span class="codeColorGreen">content</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"30"</span> &gt;
+
+
+                    <span class="codeColorComment">Setting the viewport to make your website look good on all devices:</span><br>
+                    &lt;<span class="codeColorDarkRed">meta</span> <span class="codeColorGreen">name</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"viewport"</span><span class="codeColorGreen">content</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"width=device-width, initial-scale=1.0"</span> &gt;
+                    <span class="codeColorComment">The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).</span><br>
+                    <span class="codeColorComment">The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.</span><br>
+                </pre>
+                </code>
+            </section> 
+
+        </div>
+    </div>
+    </section>
     <!-- H end -->
 
     <!-- I start -->
@@ -398,6 +455,28 @@
             <a href="./BlockLevelElements.html"></a>
         </div>
     </div> 
+
+    <div class="typeDiv">
+        <h3 class="title"><a href="./details.html/hyperLinks.html">Layout</a></h3><hr>
+        <div  class="content">
+            <p>HTML has several semantic elements that define the different parts of a web page:</p>
+            <code>
+                <pre>
+                    <dl>
+                        <dt>&lt;<span class="codeColorDarkRed">header</span>&gt;</dt><dd>-Defines a header for a document or a section</dd>
+                        <dt>&lt;<span class="codeColorDarkRed">nav</span>&gt;</dt><dd>Defines a set of navigation links</dd>
+                        <dt>&lt;<span class="codeColorDarkRed">section</span>&gt;</dt><dd>- Defines a section in a document</dd>
+                        <dt>&lt;<span class="codeColorDarkRed">article</span>&gt;</dt><dd>- Defines an independent, self-contained content</dd>
+                        <dt>&lt;<span class="codeColorDarkRed">aside</span>&gt;</dt><dd>- Defines content aside from the content (like a sidebar)</dd>
+                        <dt>&lt;<span class="codeColorDarkRed">footer</span>&gt;</dt><dd>- Defines a footer for a document or a section</dd>
+                        <dt>&lt;<span class="codeColorDarkRed">details</span>&gt;</dt><dd>- Defines additional details that the user can open and close on demand</dd>
+                        <dt>&lt;<span class="codeColorDarkRed">summary</span>&gt;</dt><dd>- Defines a heading for the <details> element</dd> 
+                    </dl>
+                </pre>
+            </code>
+        </div>
+    </div> 
+
     <div class="typeDiv">
         <h3 class="title"><a href="./details.html/lists.html">Lists</a></h3><hr>
         <div  class="content">
@@ -569,6 +648,28 @@
     </div>
     </section>
 
+    <div class="typeDiv">
+        <h3 class="title">File Paths</h3><hr>
+        <div  class="content">
+            <p>A file path describes the location of a file in a web site's folder structure.</p>
+
+            <dl>
+                <dt>File paths are used when linking to external files, like</dt>
+                <dd>-Web pages</dd>
+                <dd>-Images</dd>
+                <dd>-Style sheets</dd>
+                <dd>-JavaScripts</dd>
+            </dl>
+            <h3>Absolute File Paths</h3>
+            <p>An absolute file path is the full URL to a file. such as: src="https://www.w3schools.com/images/picture.jpg"</p>
+                
+            <h3>Relative File Paths</h3>
+            <p>A relative file path points to a file relative to the current page. such as: src="/images/picture.jpg"</p>
+                
+        </div>
+    </div>
+    </section>
+
     
     <!-- P end -->
 
@@ -587,12 +688,36 @@
     <!-- R start -->
     <section id="r">
     <div class="typeDiv">
-        <h3 class="title"><a href="/#">r</a></h3><hr>
+        <h3 class="title">Responsive Web Design</h3><hr>
         <div  class="content">
-            <p>content</p>
-
+            <p>Responsive web design is about creating web pages that look good on all devices! A responsive web design will automatically adjust for different screen sizes and viewports.</p>
+            <h3>Media Queries</h3>
+            <p>In addition to resize text and images, it is also common to use media queries in responsive web pages. With media queries you can define completely different styles for different browser sizes.</p>
+            
+            <h4>resize the browser window:</h4>
+            <section class="codeRunDiv responsiveSecion">
+                <div style="width: 100%;">
+                    <div class="left">left</div>
+                    <div class="center">center</div>
+                    <div class="right">right</div>
+                </div>
+            </section>
+            <section class="codeDiv">
+        <code>
+            /* Use a media query to add a break point at 800px: */<br>
+            <code class="codeColorDarkRed">@media</code> <code class="codeColor4">screen</code> <code class="codeColorDarkRed">and</code> (<code class="codeColorYellow">max-width:</code> <code class="codeColor4">850</code><code class="codeColorDarkRed">px</code>) { <br>
+            &nbsp; &nbsp;<code class="codeColorGreen">.left, .main, .right</code> { <br>
+                &nbsp; &nbsp; &nbsp; &nbsp;<code class="codeColorYellow">width:</code> <code class="codeColor4">100</code><code class="codeColorDarkRed">%</code>;
+            /* The width is 100%, when the viewport is 800px or smaller */<br>
+            &nbsp; &nbsp;}<br>
+            }
+        </code>
+            </section>
+            <h3>Responsive Web Design - Frameworks</h3>
+            <p>All popular CSS Frameworks offer responsive design. W3.CSS, Bootstrap</p>
         </div>
     </div>
+    
     </section>
     <!-- R end -->
 

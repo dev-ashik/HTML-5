@@ -27,6 +27,7 @@ hr {
     padding: 0;
     color: #db6a4e;
     text-align: center;
+    font-size: 30px;
 }
 
 .title a {
@@ -36,7 +37,7 @@ hr {
     text-align: center;
     text-decoration: none;
     border-bottom: 1px solid #db6a4e;
-    font-size: 30px;
+    
 }
 
 .content {
@@ -82,6 +83,7 @@ hr {
     background-color: #242831;
     border: 2px solid #4c5f79;
     font-size: 20px;
+    /* height: 300px; */
 }
 
 .codeColorGreen {
@@ -105,3 +107,45 @@ hr {
 .codeColorComment {
     color: rgb(126, 114, 114);
 }
+
+.left {
+    background-color: #2196F3;
+  text-align: center;
+  float: left;
+  width: 20%;
+  height: 50px;
+}
+.center {
+    background-color: #72138a;
+    text-align: center;
+  float: left;
+  width: 57%;
+  height: 50px;
+}
+.right {
+    background-color: #04AA6D;
+    text-align: center;
+  float: left;
+  width: 20%;
+  height: 50px;
+}
+
+
+/* Use a media query to add a break point at 800px: */
+
+@media screen and (max-width: 2000px) {
+
+    .responsiveSecion{
+        height: 50px;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .left, .center, .right {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+
+    .responsiveSecion{
+        height: 150px;
+    }
+  }
