@@ -172,6 +172,93 @@
         </div>
     </div>
     </section>
+    <div class="typeDiv">
+        <h3 class="title">Code</h3><hr>
+        <div  class="content">
+            <h3>HTML <code class="codeColorDarkRed">&lt;code&gt;</code> For Computer Code</h3>
+            <p>The HTML <code class="codeColorDarkRed">&lt;code&gt;</code> element  is used to define a piece of computer code. The content inside is displayed in the browser's default monospace font. Notice that <code class="codeColorDarkRed">&lt;code&gt;</code> element does not preserve extra whitespace and line-breaks. To fix this, you can put the <code class="codeColorDarkRed">&lt;code&gt;</code> element inside a <code class="codeColorDarkRed">&lt;pre&gt;</code> element:</p>
+            <section class="codeRunDiv">
+                <code>
+                    <p>hello world</p>
+                </code>
+            </section>
+            <section class="codeDiv">
+                <code>
+                    <p class="codeColorComment">&lt;!--For Computer Code--&gt;</p>
+                    &lt;<code class="codeColorDarkRed">code</code>&gt;<br>
+                        &nbsp; &nbsp; &lt;<code class="codeColorDarkRed">p</code>&gt;
+                            hello world
+                        &lt;<code class="codeColorDarkRed">/p</code>&gt;<br>
+                    &lt;<code class="codeColorDarkRed">/code</code>&gt;
+                </code>
+<br><br>
+                <code>
+                    <p class="codeColorComment">&lt;!--use pre--&gt;</p>
+                    &lt;<code class="codeColorDarkRed">pre</code>&gt;<br>
+                        &nbsp; &nbsp; &lt;<code class="codeColorDarkRed">code</code>&gt;<br>
+                        &nbsp; &nbsp; &nbsp; &nbsp; hello world<br>
+                        &nbsp; &nbsp; &lt;<code class="codeColorDarkRed">/code</code>&gt;<br>
+                    &lt;<code class="codeColorDarkRed">/pre</code>&gt;
+                </code>
+            </section>
+
+            <h3>HTML <code>&lt;kbd&gt;</code> For Keyboard Input</h3>
+            <p>The HTML <kbd> element is used to define keyboard input. The content inside is displayed in the browser's default monospace font.</p>
+
+            
+            <section class="codeRunDiv">
+                <p>Save the document by pressing <kbd>Ctrl + S</kbd></p>
+            </section>
+            <section class="codeDiv">
+                <code>
+                    <p class="codeColorComment">&lt;!--For Keyboard Input--&gt;</p>
+                    &lt;<code class="codeColorDarkRed">p</code>&gt;
+                    Save the document by pressing 
+                        &lt;<code class="codeColorDarkRed">kbd</code>&gt;
+                        Ctrl + S
+                        &lt;<code class="codeColorDarkRed">/kbd</code>&gt;
+                    &lt;<code class="codeColorDarkRed">/p</code>&gt;
+                </code>
+            </section>
+
+            <h3>HTML <code>&lt;samp&gt;</code> For Program Output</h3>
+            <p>The HTML <code>&lt;samp&gt;</code> element is used to define sample output from a computer program. The content inside is displayed in the browser's default monospace font.</p>
+            
+
+            <section class="codeRunDiv">
+                <p><samp>Hello World</samp></p>
+            </section>
+            <section class="codeDiv">
+                <code>
+                    <p class="codeColorComment">&lt;!--For Program Output--&gt;</p>
+                    &lt;<code class="codeColorDarkRed">p</code>&gt;
+                        &lt;<code class="codeColorDarkRed">samp</code>&gt;
+                        Hello World
+                        &lt;<code class="codeColorDarkRed">/samp</code>&gt;
+                    &lt;<code class="codeColorDarkRed">/p</code>&gt;
+                </code>
+            </section>
+
+
+            <h3>HTML <code class="codeColorDarkRed">&lt;var&gt;</code> For Variables</h3>
+            <p>The HTML <code class="codeColorDarkRed">&lt;var&gt;</code> element  is used to define a variable in programming or in a mathematical expression. The content inside is typically displayed in italic.</p>
+
+            <section class="codeRunDiv">
+                <p><var>x</var><code> = 10;</code></p>
+            </section>
+            <section class="codeDiv">
+                <code>
+                    <p class="codeColorComment">&lt;!--For Variables--&gt;</p>
+                    &lt;<code class="codeColorDarkRed">p</code>&gt;
+                        &lt;<code class="codeColorDarkRed">var</code>&gt; x &lt;<code class="codeColorDarkRed">/var</code>&gt;&lt;<code class="codeColorDarkRed">code</code>&gt;
+                        = 10;
+                        &lt;<code class="codeColorDarkRed">/code</code>&gt;
+                    &lt;<code class="codeColorDarkRed">/p</code>&gt;
+                </code>
+            </section>
+        </div>
+    </div>
+    </section>
     <!-- C end -->
 
     <!-- D start -->
@@ -201,10 +288,30 @@
     <!-- F start -->
     <section id="f">
         <div class="typeDiv">
-            <h3 class="title"><a href="/#">f</a></h3><hr>
+            <h3 class="title">Figure and Figcaption</h3><hr>
             <div  class="content">
-                <p>content</p>
+                
+                <p>The <code class="codeColorDarkRed">&lt;figure&gt;</code> tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.</p>
 
+                <p>The <code class="codeColorDarkRed">&lt;figcaption&gt;</code> tag defines a caption for a <code class="codeColorDarkRed">&lt;figure&gt;</code> element. The <code class="codeColorDarkRed">&lt;figcaption&gt;</code> element can be placed as the first or as the last child of a <code class="codeColorDarkRed">&lt;figure&gt;</code> element.</p>
+
+                <section class="codeRunDiv">
+                   <figure>
+                        <img src="./picture/tobu mone rekho.jpg" alt="Trulli" style="width:30%" height="340px">
+                        <figcaption>Fig.1 - Tobu mone rekho</figcaption>
+                    </figure>
+                </section>
+                <section class="codeDiv">
+                    <code>
+                        
+                        &lt;<code class="codeColorDarkRed">figure</code>&gt;<br>
+                        &nbsp; &nbsp; &lt;<span class="codeColorDarkRed">img</span> <span class="codeColorGreen">src</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"./picture/tobu mone rekho.jpg"</span> <span class="codeColorGreen">alt</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"tobu mone rekho"</span> &gt;<br>
+                        &nbsp; &nbsp; &lt;<code class="codeColorDarkRed">figcaption</code>&gt;
+                            Fig.1 - Tobu mone rekho
+                        &lt;<code class="codeColorDarkRed">/figcaption</code>&gt;<br>
+                        &lt;<code class="codeColorDarkRed">/figure</code>&gt;
+                    </code>
+                </section>
             </div>
         </div>
     </section>
@@ -728,6 +835,31 @@
         <div  class="content">
             <h1 style="background-color:powderblue;">This is a heading</h1>
             <p style="background-color:tomato; font-family:verdana;">This is a paragraph.</p>
+        </div>
+    </div>
+    <div class="typeDiv">
+        <h3 class="title"><a href="./details.html/styles.html">Semantic Elements</a></h3><hr>
+        <div  class="content">
+            <p>Examples of non-semantic elements: <code class="codeColorDarkRed">&lt;div&gt;</code> and <code class="codeColorDarkRed">&lt;span&gt;</code> - Tells nothing about its content.</p>
+            <p>Examples of semantic elements: <code class="codeColorDarkRed">&lt;form&gt;</code>, <code class="codeColorDarkRed">&lt;table&gt;</code>, and <code class="codeColorDarkRed">&lt;article&gt;</code> - Clearly defines its content.</p>
+            
+                <section class="codeDiv">
+                    <code>
+                        <code class="codeColorDarkRed">&lt;article&gt;</code>
+                        <code class="codeColorDarkRed">&lt;aside&gt;</code>
+                        <code class="codeColorDarkRed">&lt;details&gt;</code><br>
+                        <code class="codeColorDarkRed">&lt;figcaption&gt;</code>
+                        <code class="codeColorDarkRed">&lt;figure&gt;</code>
+                        <code class="codeColorDarkRed">&lt;header&gt;</code><br>
+                        <code class="codeColorDarkRed">&lt;footer&gt;</code>
+                        <code class="codeColorDarkRed">&lt;main&gt;</code>
+                        <code class="codeColorDarkRed">&lt;mark&gt;</code><br>
+                        <code class="codeColorDarkRed">&lt;nav&gt;</code>
+                        <code class="codeColorDarkRed">&lt;section&gt;</code>
+                        <code class="codeColorDarkRed">&lt;summary&gt;</code><br>
+                        <code class="codeColorDarkRed">&lt;time&gt;</code>
+                    </code>
+                </section>
         </div>
     </div>
     </section>
