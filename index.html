@@ -72,6 +72,22 @@
         <div  class="content">
             <h5>href, src, alt, height, width, <a href="">style</a></h5>
             
+            <h3>Spaces and Equal Signs</h3>
+            <section class="codeDiv">
+                <code>
+                    <code class="codeColorComment">&lt;!-- good --&gt;</code><br>
+                    &lt;<span class="codeColorDarkRed">link</span> <span class="codeColorGreen">rel</span><span class="codeColorDarkRed">=</span><span class="codeColorYellow">"stylesheet"</span> <span class="codeColorGreen">href</span><span class="codeColorDarkRed">=</span><span class="codeColorYellow">"styles.css"</span>&gt;<br>
+
+                    &lt;<span class="codeColorDarkRed">img</span> <span class="codeColorGreen">src</span><span class="codeColorDarkRed">=</span><span class="codeColorYellow">"../picture/imageMap.jpg"</span> <span class="codeColorGreen">alt</span><span class="codeColorDarkRed">=</span><span class="codeColorYellow">"imageMap"</span> </span>&gt;
+                    
+                    <br><br>
+
+                    <code class="codeColorComment">&lt;!-- bad --&gt;</code><br>
+                    &lt;<span class="codeColorDarkRed">link</span> <span class="codeColorGreen">rel</span><span class="codeColorDarkRed"> = </span> <span class="codeColorYellow">"stylesheet"</span> <span class="codeColorGreen">href</span><span class="codeColorDarkRed"> = </span><span class="codeColorYellow">"styles.css"</span>&gt;<br>
+
+                    &lt;<span class="codeColorDarkRed">img</span> <span class="codeColorGreen">src</span><span class="codeColorDarkRed"> = </span><span class="codeColorYellow">"../picture/imageMap.jpg"</span> <span class="codeColorGreen">alt</span><span class="codeColorDarkRed"> = </span><span class="codeColorYellow">"imageMap"</span> </span>&gt;
+                </code>
+            </section>
         </div>
     </div>
     </section>
@@ -529,9 +545,35 @@
     <!-- J start -->
     <section id="j">
     <div class="typeDiv">
-        <h3 class="title"><a href="/#">j</a></h3><hr>
+        <h3 class="title"><a href="/#">java script</a></h3><hr>
         <div  class="content">
-            <p>content</p>
+            <section class="codeRunDiv">
+
+                <p id="my">I am a student.</p>
+                <p id="you">You are a student.</p>
+                <script>
+                    document.getElementById("you").innerHTML = "You are a teacher";
+                </script>
+            </section>
+            <section class="codeDiv">
+                <code>
+                    &lt;<span class="codeColorDarkRed">body</span>&gt;<br>
+                        &nbsp; &nbsp; &lt;<span class="codeColorDarkRed">p</span> <span class="codeColorGreen">id</span><span class="codeColorDarkRed">=</span><span class="codeColorYellow">"my"</span>&gt;
+                        I am a student.&lt;<span class="codeColorDarkRed">/p</span>&gt;<br>
+                        &nbsp; &nbsp; &lt;<span class="codeColorDarkRed">p</span> <span class="codeColorGreen">id</span><span class="codeColorDarkRed">=</span><span class="codeColorYellow">"you"</span>&gt;
+                        You are a student.&lt;<span class="codeColorDarkRed">/p</span>&gt;<br>
+                        
+                        <br><br>
+                        
+                        &nbsp; &nbsp; &lt;<span class="codeColorDarkRed">script</span>&gt;<br>
+                        &nbsp; &nbsp; &nbsp; &nbsp; document.<span class="codeColorGreen">getElementById</span>(<span class="codeColorYellow">"you"</span>).innerHTML <span class="codeColorDarkRed">=</span> <span class="codeColorYellow">"You are a teacher"</span>;<br>
+                        &nbsp; &nbsp; &lt;<span class="codeColorDarkRed">/script</span>&gt;<br>
+                        <script>
+                            document.getElementById("you").innerHTML = "You are a teacher";
+                        </script>
+                    &lt;<span class="codeColorDarkRed">/body</span>&gt;
+                </code>
+            </section>
 
         </div>
     </div>
