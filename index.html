@@ -280,10 +280,10 @@
     <!-- D start -->
     <section id="d"></section>
     <div class="typeDiv">
-        <h3 class="title"><a href="/#">d</a></h3><hr>
+        <h3 class="title"><a href="/#">Default Filenames</a></h3><hr>
         <div  class="content">
-            <p>content</p>
-
+            <p>When a URL does not specify a filename at the end (like "https://www.w3schools.com/"), the server just adds a default filename, such as "index.html", "index.htm", "default.html", or "default.htm".</p>
+            <p>If your server is configured only with "index.html" as the default filename, your file must be named "index.html", and not "default.html".</p>
         </div>
     </div> 
     </section>
@@ -292,10 +292,39 @@
     <!-- E start -->
     <section id="e">
         <div class="typeDiv">
-            <h3 class="title"><a href="/#">e</a></h3><hr>
+            <h3 class="title"><a href="/#">Entities or character entity</a></h3><hr>
             <div  class="content">
-                <p>content</p>
-
+                <p>Reserved characters in HTML must be replaced with character entities.</p>
+                <section class="codeRunDiv">
+                     :-<br>
+                    &gt; :- &gt;<br>
+                    Non-breaking Space :- &nbsp;<br>
+                    - :- (&#8209;)<br>
+                    <table class="entitiesTable">
+                        <thead>
+                            <tr>
+                                <th class="entitiesTh">Description</th>
+                                <th class="entitiesTh">Entity Name</th>
+                                <th class="entitiesTh">Entity Number</th>
+                                <th class="entitiesTh">Output</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="entitiesTd">les Then</td>
+                                <td>&amp;lt;</td>
+                                <td>&amp;#60;</td>
+                                <td>&lt;</td>
+                            </tr>
+                            <tr>
+                                <td>les Then</td>
+                                <td>&amp;</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
             </div>
         </div>
     </section>
@@ -352,6 +381,12 @@
         <div  class="content">
             <a href="url">text</a>
             <p>A link does not have to be text. A link can be an image or any other HTML element!</p>
+        </div>
+    </div>
+    <div class="typeDiv">
+        <h3 class="title">.htm and .html?</h3><hr>
+        <div  class="content">
+            <p>There is no difference between the .htm and .html file extensions! Both will be treated as HTML by any web browser and web server.</p>
         </div>
     </div>
     <div class="typeDiv">
