@@ -131,6 +131,10 @@ hr {
 }
 
 
+.entitiesTable, .entitiesTh, .entitiesTd {
+    border: 1px solid rgb(65, 57, 57)
+}
+
 /* Use a media query to add a break point at 800px: */
 
 @media screen and (max-width: 2000px) {

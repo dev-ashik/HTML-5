@@ -72,6 +72,22 @@
         <div  class="content">
             <h5>href, src, alt, height, width, <a href="">style</a></h5>
             
+            <h3>Spaces and Equal Signs</h3>
+            <section class="codeDiv">
+                <code>
+                    <code class="codeColorComment">&lt;!-- good --&gt;</code><br>
+                    &lt;<span class="codeColorDarkRed">link</span> <span class="codeColorGreen">rel</span><span class="codeColorDarkRed">=</span><span class="codeColorYellow">"stylesheet"</span> <span class="codeColorGreen">href</span><span class="codeColorDarkRed">=</span><span class="codeColorYellow">"styles.css"</span>&gt;<br>
+
+                    &lt;<span class="codeColorDarkRed">img</span> <span class="codeColorGreen">src</span><span class="codeColorDarkRed">=</span><span class="codeColorYellow">"../picture/imageMap.jpg"</span> <span class="codeColorGreen">alt</span><span class="codeColorDarkRed">=</span><span class="codeColorYellow">"imageMap"</span> </span>&gt;
+                    
+                    <br><br>
+
+                    <code class="codeColorComment">&lt;!-- bad --&gt;</code><br>
+                    &lt;<span class="codeColorDarkRed">link</span> <span class="codeColorGreen">rel</span><span class="codeColorDarkRed"> = </span> <span class="codeColorYellow">"stylesheet"</span> <span class="codeColorGreen">href</span><span class="codeColorDarkRed"> = </span><span class="codeColorYellow">"styles.css"</span>&gt;<br>
+
+                    &lt;<span class="codeColorDarkRed">img</span> <span class="codeColorGreen">src</span><span class="codeColorDarkRed"> = </span><span class="codeColorYellow">"../picture/imageMap.jpg"</span> <span class="codeColorGreen">alt</span><span class="codeColorDarkRed"> = </span><span class="codeColorYellow">"imageMap"</span> </span>&gt;
+                </code>
+            </section>
         </div>
     </div>
     </section>
@@ -264,10 +280,10 @@
     <!-- D start -->
     <section id="d"></section>
     <div class="typeDiv">
-        <h3 class="title"><a href="/#">d</a></h3><hr>
+        <h3 class="title"><a href="/#">Default Filenames</a></h3><hr>
         <div  class="content">
-            <p>content</p>
-
+            <p>When a URL does not specify a filename at the end (like "https://www.w3schools.com/"), the server just adds a default filename, such as "index.html", "index.htm", "default.html", or "default.htm".</p>
+            <p>If your server is configured only with "index.html" as the default filename, your file must be named "index.html", and not "default.html".</p>
         </div>
     </div> 
     </section>
@@ -276,10 +292,39 @@
     <!-- E start -->
     <section id="e">
         <div class="typeDiv">
-            <h3 class="title"><a href="/#">e</a></h3><hr>
+            <h3 class="title"><a href="/#">Entities or character entity</a></h3><hr>
             <div  class="content">
-                <p>content</p>
-
+                <p>Reserved characters in HTML must be replaced with character entities.</p>
+                <section class="codeRunDiv">
+                     :-<br>
+                    &gt; :- &gt;<br>
+                    Non-breaking Space :- &nbsp;<br>
+                    - :- (&#8209;)<br>
+                    <table class="entitiesTable">
+                        <thead>
+                            <tr>
+                                <th class="entitiesTh">Description</th>
+                                <th class="entitiesTh">Entity Name</th>
+                                <th class="entitiesTh">Entity Number</th>
+                                <th class="entitiesTh">Output</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="entitiesTd">les Then</td>
+                                <td>&amp;lt;</td>
+                                <td>&amp;#60;</td>
+                                <td>&lt;</td>
+                            </tr>
+                            <tr>
+                                <td>les Then</td>
+                                <td>&amp;</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
             </div>
         </div>
     </section>
@@ -336,6 +381,12 @@
         <div  class="content">
             <a href="url">text</a>
             <p>A link does not have to be text. A link can be an image or any other HTML element!</p>
+        </div>
+    </div>
+    <div class="typeDiv">
+        <h3 class="title">.htm and .html?</h3><hr>
+        <div  class="content">
+            <p>There is no difference between the .htm and .html file extensions! Both will be treated as HTML by any web browser and web server.</p>
         </div>
     </div>
     <div class="typeDiv">
@@ -529,9 +580,35 @@
     <!-- J start -->
     <section id="j">
     <div class="typeDiv">
-        <h3 class="title"><a href="/#">j</a></h3><hr>
+        <h3 class="title"><a href="/#">java script</a></h3><hr>
         <div  class="content">
-            <p>content</p>
+            <section class="codeRunDiv">
+
+                <p id="my">I am a student.</p>
+                <p id="you">You are a student.</p>
+                <script>
+                    document.getElementById("you").innerHTML = "You are a teacher";
+                </script>
+            </section>
+            <section class="codeDiv">
+                <code>
+                    &lt;<span class="codeColorDarkRed">body</span>&gt;<br>
+                        &nbsp; &nbsp; &lt;<span class="codeColorDarkRed">p</span> <span class="codeColorGreen">id</span><span class="codeColorDarkRed">=</span><span class="codeColorYellow">"my"</span>&gt;
+                        I am a student.&lt;<span class="codeColorDarkRed">/p</span>&gt;<br>
+                        &nbsp; &nbsp; &lt;<span class="codeColorDarkRed">p</span> <span class="codeColorGreen">id</span><span class="codeColorDarkRed">=</span><span class="codeColorYellow">"you"</span>&gt;
+                        You are a student.&lt;<span class="codeColorDarkRed">/p</span>&gt;<br>
+                        
+                        <br><br>
+                        
+                        &nbsp; &nbsp; &lt;<span class="codeColorDarkRed">script</span>&gt;<br>
+                        &nbsp; &nbsp; &nbsp; &nbsp; document.<span class="codeColorGreen">getElementById</span>(<span class="codeColorYellow">"you"</span>).innerHTML <span class="codeColorDarkRed">=</span> <span class="codeColorYellow">"You are a teacher"</span>;<br>
+                        &nbsp; &nbsp; &lt;<span class="codeColorDarkRed">/script</span>&gt;<br>
+                        <script>
+                            document.getElementById("you").innerHTML = "You are a teacher";
+                        </script>
+                    &lt;<span class="codeColorDarkRed">/body</span>&gt;
+                </code>
+            </section>
 
         </div>
     </div>
