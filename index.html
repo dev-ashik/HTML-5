@@ -294,12 +294,8 @@
         <div class="typeDiv">
             <h3 class="title"><a href="/#">Entities or character entity</a></h3><hr>
             <div  class="content">
-                <p>Reserved characters in HTML must be replaced with character entities.</p>
+                <p>Reserved characters in HTML must be replaced with character entities. Entity names are case sensitive.</p>
                 <section class="codeRunDiv">
-                     :-<br>
-                    &gt; :- &gt;<br>
-                    Non-breaking Space :- &nbsp;<br>
-                    - :- (&#8209;)<br>
                     <table class="entitiesTable">
                         <thead>
                             <tr>
@@ -312,15 +308,111 @@
                         <tbody>
                             <tr>
                                 <td class="entitiesTd">les Then</td>
-                                <td>&amp;lt;</td>
-                                <td>&amp;#60;</td>
-                                <td>&lt;</td>
+                                <td class="entitiesTd">&amp;lt;</td>
+                                <td class="entitiesTd">&amp;#60;</td>
+                                <td class="entitiesTd">&lt;</td>
                             </tr>
                             <tr>
-                                <td>les Then</td>
-                                <td>&amp;</td>
-                                <td></td>
-                                <td></td>
+                                <td class="entitiesTd">greater Then</td>
+                                <td class="entitiesTd">&amp;gt;</td>
+                                <td class="entitiesTd">&amp;#62;</td>
+                                <td class="entitiesTd">&gt;</td>
+                            </tr>
+                            <tr>
+                                <td class="entitiesTd">Non-breaking Space</td>
+                                <td class="entitiesTd">&amp;nbsp;</td>
+                                <td class="entitiesTd"></td>
+                                <td class="entitiesTd">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="entitiesTd">ampersand</td>
+                                <td class="entitiesTd">&amp;amp;</td>
+                                <td class="entitiesTd">&amp;#38;</td>
+                                <td class="entitiesTd">&amp;</td>
+                            </tr>
+                            <tr>
+                                <td class="entitiesTd">double quotation</td>
+                                <td class="entitiesTd">&amp;quot;</td>
+                                <td class="entitiesTd">&amp;#34;</td>
+                                <td class="entitiesTd">&quot;</td>
+                            </tr>
+                            <tr>
+                                <td class="entitiesTd">single quotation (apostrophe)</td>
+                                <td class="entitiesTd">&amp;apos;</td>
+                                <td class="entitiesTd">&amp;#39;</td>
+                                <td class="entitiesTd">&apos;</td>
+                            </tr>
+                            <tr>
+                                <td class="entitiesTd">cent</td>
+                                <td class="entitiesTd">&amp;cent;</td>
+                                <td class="entitiesTd">&amp;#162;</td>
+                                <td class="entitiesTd">&cent;</td>
+                            </tr>
+                            <tr>
+                                <td class="entitiesTd">pound</td>
+                                <td class="entitiesTd">&amp;pound;</td>
+                                <td class="entitiesTd">&amp;#163;</td>
+                                <td class="entitiesTd">&pound;</td>
+                            </tr>
+                            <tr>
+                                <td class="entitiesTd">yen</td>
+                                <td class="entitiesTd">&amp;yen;</td>
+                                <td class="entitiesTd">&amp;#165;</td>
+                                <td class="entitiesTd">&yen;</td>
+                            </tr>
+                            <tr>
+                                <td class="entitiesTd">euro</td>
+                                <td class="entitiesTd">&amp;euro;</td>
+                                <td class="entitiesTd">&amp;#8364;</td>
+                                <td class="entitiesTd">&euro;</td>
+                            </tr>
+                            <tr>
+                                <td class="entitiesTd">copyright</td>
+                                <td class="entitiesTd">&amp;copy;</td>
+                                <td class="entitiesTd">&amp;#169;</td>
+                                <td class="entitiesTd">&copy;</td>
+                            </tr>
+                            <tr>
+                                <td class="entitiesTd">registered trademark</td>
+                                <td class="entitiesTd">&amp;reg;</td>
+                                <td class="entitiesTd">&amp;#174;</td>
+                                <td class="entitiesTd">&reg;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <h3>Combining Diacritical Marks</h3>
+                <p>A diacritical mark is a "glyph" added to a letter. Some diacritical marks, like grave (  ̀) and acute (  ́) are called accents.</p>
+                <section class="codeRunDiv">
+                    <table class="entitiesTable">
+                        <thead>
+                            <tr>
+                                <th class="entitiesTh">Construct</th>
+                                <th class="entitiesTh">Character</th>
+                                <th class="entitiesTh">Output</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="entitiesTd">a&amp;#768;</td>
+                                <td class="entitiesTd">a</td>
+                                <td class="entitiesTd">a&#768;</td>
+                            </tr>
+                            <tr>
+                                <td class="entitiesTd">a&amp;#769;</td>
+                                <td class="entitiesTd">a</td>
+                                <td class="entitiesTd">a&#769;</td>
+                            </tr>
+                            <tr>
+                                <td class="entitiesTd">a&amp;#770;</td>
+                                <td class="entitiesTd">a</td>
+                                <td class="entitiesTd">a&#770;</td>
+                            </tr>
+                            <tr>
+                                <td class="entitiesTd">a&amp;#771;</td>
+                                <td class="entitiesTd">a</td>
+                                <td class="entitiesTd">a&#771;</td>
                             </tr>
                         </tbody>
                     </table>
@@ -342,7 +434,7 @@
 
                 <section class="codeRunDiv">
                    <figure>
-                        <img src="./picture/tobu mone rekho.jpg" alt="Trulli" style="width:30%" height="340px">
+                        <img src="./picture/tobu mone rekho.jpg" alt="Trulli" style="width:150px" height="200px">
                         <figcaption>Fig.1 - Tobu mone rekho</figcaption>
                     </figure>
                 </section>
