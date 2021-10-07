@@ -131,6 +131,14 @@ hr {
 }
 
 
+.entitiesTable, .entitiesTh, .entitiesTd {
+    border: 2px solid rgb(75, 87, 87);
+    border-collapse: collapse;
+}
+
+.entitiesTh, .entitiesTd {
+    padding: 5px 10px;
+}
 /* Use a media query to add a break point at 800px: */
 
 @media screen and (max-width: 2000px) {
