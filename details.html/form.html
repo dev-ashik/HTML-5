@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <p> the default width of an input field is 20 characters.</p>
+    <section class="codeRunDiv">
+        <form>
+            <label for="nname">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Name"><br>
+            <label for="age">Age:</label><br>
+            <input type="text" id="age" name="age" placeholder="age">
+          </form>
+    </section>
+    <section class="codeDiv">
+        <code>
+            
+        </code>
+    </section>
+
+    <h3>Radio Button</h3>
+    <section class="codeRunDiv">
+        <p>must use same name</p>
+        <form action="">
+            <label for="student">student</label>
+            <input type="radio" name="job"><br>
+            <label for="tescher">teacher</label>
+            <input type="radio" name="job"><br>
+        </form>
+    </section>
+    <section class="codeDiv">
+        <code>
+            
+        </code>
+    </section>
+
+    <h3>Checkbox</h3>
+    <section class="codeRunDiv">
+        <form action="">
+            <input type="checkbox" name="play">
+            <label for="play">Do you like to play?</label><br>
+            <input type="checkbox" name="job">
+            <label for="job">do you like your job?</label>
+        </form>
+    </section>
+    <section class="codeDiv">
+        <code>
+            
+        </code>
+    </section>
+
+    <h3>Submit</h3>
+    <section class="codeRunDiv">
+        <form action="">
+            <label for="name">Name</label><br>
+            <input type="text" name="name"><br>
+            <input type="submit" name="submit" value="submit">
+        </form>
+    </section>
+    <section class="codeDiv">
+        <code>
+            
+        </code>
+    </section>
+
+    <h3>The Action Attribute</h3>
+    <p>The action attribute defines the action to be performed when the form is submitted. Usually, the form data is sent to a file on the server when the user clicks on the submit button. If the action attribute is omitted, the action is set to the current page. </p>
+
+    <h3>The Target Attribute</h3>
+    <section class="codeRunDiv">
+        <form action="" target="_blank">
+            <label for="name">_blank</label><br>
+            <input type="text" name="name"><br>
+            <input type="submit" name="submit" value="submit">
+        </form>
+        <hr>
+        <form action="" target="_self">
+            <label for="name">_self</label><br>
+            <input type="text" name="name"><br>
+            <input type="submit" name="submit" value="submit">
+        </form>
+        <hr>
+        <form action="" target="_parent">
+            <label for="name">_parent</label><br>
+            <input type="text" name="name"><br>
+            <input type="submit" name="submit" value="submit">
+        </form>
+        <hr>
+        <form action="" target="_top">
+            <label for="name">_top</label><br>
+            <input type="text" name="name"><br>
+            <input type="submit" name="submit" value="submit">
+        </form>
+        <hr>
+        <form action="" target="description">
+            <label for="name">description</label><br>
+            <input type="text" name="name"><br>
+            <input type="submit" name="submit" value="submit">
+        </form>
+    </section>
+    <section class="codeDiv">
+        <code>
+            
+        </code>
+    </section>
+
+
+    <h3>The Method Attribute</h3>
+    <p>The method attribute specifies the HTTP method to be used when submitting the form data.</p>
+
+    <h3>The Autocomplete Attribute</h3>
+    <p>The autocomplete attribute specifies whether a form should have autocomplete on or off. When autocomplete is on, the browser automatically complete values based on values that the user has entered before.</p>
+    <section class="codeRunDiv">
+        <form action="" autocomplete="on">
+            <label for="name">Name</label><br>
+            <input type="text" name="name"><br>
+            <input type="submit" name="submit" value="submit">
+        </form>
+    </section>
+    <section class="codeDiv">
+        <code>
+            
+        </code>
+    </section>
+
+
+    <h1>The HTML "form" Elements</h1>
+    <section class="codeDiv">
+        <code>
+            &lt;<span class="codeColorDarkRed">input</span>&gt;
+            &lt;<span class="codeColorDarkRed">label</span>&gt;
+            &lt;<span class="codeColorDarkRed">select</span>&gt;
+            &lt;<span class="codeColorDarkRed">textarea</span>&gt;
+            &lt;<span class="codeColorDarkRed">button</span>&gt;
+            &lt;<span class="codeColorDarkRed">fieldset</span>&gt;
+            &lt;<span class="codeColorDarkRed">legend</span>&gt;
+            &lt;<span class="codeColorDarkRed">datalist</span>&gt;
+            &lt;<span class="codeColorDarkRed">output</span>&gt;
+            &lt;<span class="codeColorDarkRed">option</span>&gt;
+            &lt;<span class="codeColorDarkRed">optgroup</span>&gt;
+            
+        </code>
+    </section>
+
+
+    <section class="codeRunDiv">
+        <form action="">
+            <input type="text" name="name" placeholder="your name"><br>
+
+            <label for="name">Your name</label><br>
+
+            <select id="numbers" name="numbers">
+                <option value="volvo">selector</option>
+                <option value="volvo" selected>one selected</option>
+                <option value="saab">two</option>
+                <option value="fiat">three</option>
+                <option value="audi">four</option>
+            </select><br>
+
+            <textarea name="text" id="textarea" cols="30" rows="10">write here</textarea><br>
+
+            <button type="button" onclick="handleClick()">Click Me!</button>
+
+            <p>The "fieldset" element is used to group related data in a form.  The "legend" element defines a caption for the "fieldset" element.</p>
+            <fieldset>
+                <legend>fieldset</legend>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value="Ashik"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="Mahmud"><br><br>
+                <input type="submit" value="Submit">
+            </fieldset>
+
+
+            <label for="datalist">datalist</label>
+            <p>The "datalist" element specifies a list of pre-defined options for an "input" element. Users will see a drop-down list of the pre-defined options as they input data.  The list attribute of the "input" element, must refer to the id attribute of the "datalist" element.</p>
+            <input list="browsers" name="browser">
+            <datalist id="browsers">
+                <option value="one">
+                <option value="two">
+                <option value="three">
+                <option value="four">
+                <option value="five">
+            </datalist>
+            <input type="submit">
+
+            <output name="x" for="a b"></output>
+        </form>
+    </section>
+
+    <input type="text">
+    <input type="password">
+    <input type="checkbox">
+    <input type="radio">
+    <input type="submit">
+    <input type="button">
+</body>
+</html>
