@@ -205,5 +205,27 @@
     <input type="radio">
     <input type="submit">
     <input type="button"> -->
+
+
+    <h2>form* Attributes</h2>
+    <section class="codeRunDiv">
+        <section class="codeDiv">
+            form: 
+            <form action="" id="form1">
+                <input type="text" id="firstname" name="firstname" placeholder="first name"><br>
+                <input type="submit" value="Submit">
+            </form><br>
+            <input type="text" id="lastname" name="lastname" form="form1" placeholder="last name">
+        </section>
+
+        formaction:
+        <form action="../php/test1.php">
+            <input type="text" id="firstname" name="firstname"><br>
+            <input type="text" id="lastname" name="lastname"><br>
+            <input type="submit" value="Submit to test1">
+            <input type="submit" formaction="../php/test2.php" value="Submit to test2">
+        </form>
+    </section>
+    
 </body>
 </html>
