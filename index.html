@@ -742,10 +742,51 @@
     <!-- G start -->
     <section id="g">
     <div class="typeDiv">
-        <h3 class="title"><a href="/#">g</a></h3><hr>
+        <h3 class="title"><a href="./details.html/graphics.html">Graphics</a></h3><hr>
         <div  class="content">
-            <p>content</p>
+            <p>Canvas</p>
+            <div>
+                <canvas id="myCanvas2" width="200" height="100" style="border:1px solid red;"></canvas>
+            </div>
+            <div>
+                <canvas id="myCanvas4" width="200" height="100" style="border:1px solid red;"></canvas>
+            </div>
 
+            <script>
+
+                var c2  = document.getElementById("myCanvas2");
+                var ctx2 = c2.getContext("2d");
+                ctx2.beginPath();
+                ctx2.arc(95, 50, 40, 0, 2 * Math.PI);
+                ctx2.stroke();
+
+                var c4 = document.getElementById("myCanvas4");
+                var ctx4 = c4.getContext("2d");
+
+                // Create gradient
+                var grd4 = ctx4.createRadialGradient(75, 50, 5, 90, 60, 100);
+                grd4.addColorStop(0, "red");
+                grd4.addColorStop(1, "white");
+
+                // Fill with gradient
+                ctx4.fillStyle = grd4;
+                ctx4.fillRect(10, 10, 150, 80);
+            </script>
+
+        </div>
+    </div>
+
+    <div class="typeDiv">
+        <h3 class="title"><a href="/#">SVG Graphics</a></h3><hr>
+        <div  class="content">
+            <p>SVG Graphics</p>
+            <p>SVG defines vector-based graphics in XML format.</p>
+            <p>SVG stands for Scalable Vector Graphics</p>
+
+            <svg width="300" height="200">
+                <polygon points="100,10 40,198 190,78 10,78 160,198"
+                style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+            </svg>
         </div>
     </div>
     </section>
@@ -953,42 +994,85 @@
         <h3 class="title">input</h3><hr>
         <div  class="content">>
             <section class="codeRunDiv">
-                <input type="button">
-                <!-- <input type="checkbox"> -->
-                <!-- <input type="color"> -->
-                <!-- <input type="date"> -->
-                <!-- <input type="datetime-local"> -->
-                <!-- <input type="email"> -->
-                <!-- <input type="file"> -->
-                <!-- <input type="hidden"> -->
-                <!-- <input type="image"> -->
-                <!-- <input type="month"> -->
-                <!-- <input type="number"> -->
-                <!-- <input type="password"> -->
-                <!-- <input type="radio"> -->
-                <!-- <input type="range"> -->
-                <!-- <input type="reset"> -->
-                <!-- <input type="search"> -->
-                <!-- <input type="submit"> -->
-                <!-- <input type="tel"> -->
-                <!-- <input type="text"> -->
-                <!-- <input type="time"> -->
-                <!-- <input type="url"> -->
-                <!-- <input type="week"> -->
+                text: <input type="text"><br>
+                password: <input type="password"><br>
+                number: <input type="number"><br>
+                email: <input type="email"><br>
+                search: <input type="search"><br>
+                tel: <input type="tel"><br>
+                url: <input type="url"><br>
+                submit: <input type="submit" value="submit"><br>
+                button: <input type="button" value="Button"><br>
+                reset<input type="reset"><br>
+                file: <input type="file"><br>
+                date: <input type="date"><br>
+                datetime-local: <input type="datetime-local"><br>
+                month: <input type="month"><br>
+                time: <input type="time"><br>
+                week: <input type="week"><br>
+                checkbox: <input type="checkbox"><br>
+                radio: <input type="radio"><br>
+                hidden: <input type="hidden"><br>
+                image: <input type="image"><br>
+                color: <input type="color"><br>
+                range: <input type="range"><br>
             </section>
             
             <section class="codeDiv">
                 <pre>
-                &lt;<span class="codeColorDarkRed">img</span> <span class="codeColorGreen">src</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"../picture/imageMap.jpg"</span> <span class="codeColorGreen">alt</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"imageMap"</span> <span class="codeColorGreen">usemap</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"#testmap"</span>&gt;
-    
-                &lt;<span class="codeColorDarkRed">map</span> <span class="codeColorGreen">name</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"testmap"</span>&gt;
+                <!-- &lt;<span class="codeColorDarkRed">map</span> <span class="codeColorGreen">name</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"testmap"</span>&gt;
                     &lt;<span class="codeColorDarkRed">area</span> <span class="codeColorGreen">shape</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"rect"</span> <span class="codeColorGreen">coords</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"250, 264, 630, 607"</span> <span class="codeColorGreen">href</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"./laptop.html"</span> <span class="codeColorGreen">alt</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"laptop"</span>&gt;
                     &lt;<span class="codeColorDarkRed">area</span> <span class="codeColorGreen">shape</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"circle"</span> <span class="codeColorGreen">coords</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"740, 566, 38"</span> <span class="codeColorGreen">href</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"./mouse.html"</span> <span class="codeColorGreen">alt</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">"mouse"</span>&gt;
                     &lt;<span class="codeColorDarkRed">area</span> <span class="codeColorGreen">shape</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">""</span> <span class="codeColorGreen">coords</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">""</span> <span class="codeColorGreen">href</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">""</span> <span class="codeColorGreen">alt</span> <span class="codeColorDarkRed">=</span><span class="codeColorYellow">""</span>&gt;
-                &lt;<span class="codeColorDarkRed">/map</span>&gt;
+                &lt;<span class="codeColorDarkRed">/map</span>&gt; -->
                 </pre>
             </section>
-            <a class="BackButton" href="./details.html/image.html">Images </a> &nbsp;&nbsp; <a class="BackButton" href="./details.html/imageMap.html">Image Map</a> 
+            
+
+            <h3>HTML Input Attributes</h3>
+            <p>value, </p>
+            <section class="codeRunDiv">
+                value:  <input type="text" value="Text here"><br>
+                Readonly:  <input type="text" value="readonly" readonly><br>
+                Disabled:  <input type="text" value="Disabled" disabled><br>
+                Size: <input type="text" id="fname" name="fname" size="50"><br>
+                <small class="codeColorComment">The default value for size is 20. The size attribute works with the following input types: text, search, tel, url, email, and password.</small><br>
+                maxlength 4: <input type="text" id="pin" name="pin" maxlength="4" size="4"><br>
+                <small class="codeColorComment">When a maxlength is set, the input field will not accept more than the specified number of characters. However, this attribute does not provide any feedback. So, if you want to alert the user, you must write JavaScript code.</small><br>
+                min and max: <input type="date" id="dateminmax" name="dateminmax" min="2021-01-01" max="2021-12-31"><br>
+                <input type="number" id="minmaxnumber" name="minmaxnumber" value="0" min="0" max="9"><br>
+                <small class="codeColorComment">The min and max attributes work with the following input types: number, range, date, datetime-local, month, time and week.</small><br>
+                Choose multiple files: <input type="file" id="files" name="files" multiple><br>
+                <small class="codeColorComment">The multiple attribute works with the following input types: email, and file.</small><br>
+                pattern: <input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code"><br>
+                <small class="codeColorComment">The input pattern attribute specifies a regular expression that the input field's value is checked against, when the form is submitted. The pattern attribute works with the following input types: text, date, search, url, tel, email, and password. <a href="https://www.w3schools.com/js/js_regexp.asp"> regular expressions</a></small><br>
+                placeholder: <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+                <small class="codeColorComment">The placeholder attribute works with the following input types: text, search, url, tel, email, and password.</small><br>
+                required: <input type="text" id="username" name="username" required><br>
+                <small class="codeColorComment">The input required attribute specifies that an input field must be filled out before submitting the form. Works with: text, search, url, tel, email, password, date pickers, number, checkbox, radio, and file.</small><br>
+                step: <input type="number" id="points" name="points" step="2"><br>
+                <small class="codeColorComment"> if step="2", legal numbers could be -4, -2 0, 2, 4, etc. Works with: number, range, date, datetime-local, month, time and week.</small><br>
+                Autofocus: <input type="text" id="name" name="name" autofocus><br>
+                <small class="codeColorComment">The input autofocus attribute specifies that an input field should automatically get focus when the page loads.</small><br>
+
+                height and width: <input type="image" src="./picture/weav.jpg" alt="Submit" width="48" height="48">
+
+                <form>
+                    list: <input list="device" placeholder="device">
+                    <datalist id="device">
+                      <option value="mobile">
+                      <option value="laptop">
+                      <option value="tablate">
+                      <option value="pc">
+                    </datalist>
+                </form>
+
+                autocomplete: <input type="email" id="email" name="email" autocomplete="off"><br><br>
+
+
+                
+                
+            </section>
         </div>
     </div>
     

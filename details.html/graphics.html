@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphics</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <style>
+        body {
+            background-color: rgb(198, 199, 197);
+            color: black;
+        }
+        #myCanvas {
+            
+        }
+    </style>
+</head>
+<body>
+    <h3>HTML Canvas</h3>
+    <div>
+        <canvas id="myCanvas1" width="200" height="100" style="border:1px solid red;"></canvas>
+    </div>
+    <div>
+        <canvas id="myCanvas2" width="200" height="100" style="border:1px solid red;"></canvas>
+    </div>
+    <div>
+        <canvas id="myCanvas3" width="200" height="100" style="border:1px solid red;"></canvas>
+    </div>
+
+    <h3>Draw Linear Gradient</h3>
+    <div>
+        <canvas id="myCanvas4" width="200" height="100" style="border:1px solid red;"></canvas>
+    </div>
+
+    <h3>Draw Image</h3>
+    <div>
+        <img id="tobuMoneRekho" src="../picture/tobu mone rekho.jpg" alt="img" width="200" height="250"><br>
+        <p><button onclick="myCanvas()">Try it</button></p>
+        <canvas id="myCanvas5" width="220" height="270" style="border:1px solid red;"></canvas>
+    </div>
+
+
+    <a href="https://www.w3schools.com/graphics/canvas_intro.asp">HTML Canvas Tutorial</a>
+    <script>
+        var c1 = document.getElementById("myCanvas1");
+        var ctx1 = c1.getContext("2d");
+        ctx1.moveTo(0, 0);
+        ctx1.lineTo(200, 100);
+        ctx1.stroke();
+
+        var c2 = document.getElementById("myCanvas2");
+        var ctx2 = c2.getContext("2d");
+        ctx2.beginPath();
+        ctx2.arc(95, 50, 40, 0, 2 * Math.PI);
+        ctx2.stroke();
+
+
+        // var c3 = document.getElementById("myCanvas3");
+        // var ctx3 = c3.getContext("2d");
+        // ctx3.font = "30px Arial";
+        // ctx3.fillText("Hello World", 10, 50);
+
+        
+        var c3 = document.getElementById("myCanvas3");
+        var ctx3 = c3.getContext("2d");
+        ctx3.font = "30px Arial";
+        ctx3.strokeText("Hello World", 10, 50);
+
+        // Linear Gradient start
+        var c4 = document.getElementById("myCanvas4");
+        var ctx4 = c4.getContext("2d");
+
+        // Create gradient
+        var grd4 = ctx4.createRadialGradient(75, 50, 5, 90, 60, 100);
+        grd4.addColorStop(0, "red");
+        grd4.addColorStop(1, "white");
+
+        // Fill with gradient
+        ctx4.fillStyle = grd4;
+        ctx4.fillRect(10, 10, 150, 80);
+
+        // Linear Gradient end
+
+
+        function myCanvas() {
+            var c5 = document.getElementById("myCanvas5");
+            var ctx5 = c5.getContext("2d");
+
+            var tobuMoneRekhoPhoto = document.getElementById("tobuMoneRekho");
+            ctx.drawImage(tobuMoneRekhoPhoto,10,10);
+        }      
+
+    </script>
+</body>
+</html>
