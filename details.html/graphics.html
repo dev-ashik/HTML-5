@@ -27,8 +27,6 @@
     <div>
         <canvas id="myCanvas3" width="200" height="100" style="border:1px solid red;"></canvas>
     </div>
-    <!-- <canvas id="myCanvas1" width="200" height="100" style="border:1px solid red;"> -->
-    <!-- <canvas id="myCanvas2" width="200" height="100" style="border:1px solid red;"> -->
 
     <h3>Draw Linear Gradient</h3>
     <div>
@@ -71,7 +69,7 @@
 
         // Linear Gradient start
         var c4 = document.getElementById("myCanvas4");
-        var ctx4 = c.getContext("2d");
+        var ctx4 = c4.getContext("2d");
 
         // Create gradient
         var grd4 = ctx4.createRadialGradient(75, 50, 5, 90, 60, 100);
@@ -79,7 +77,7 @@
         grd4.addColorStop(1, "white");
 
         // Fill with gradient
-        ctx4.fillStyle = grd;
+        ctx4.fillStyle = grd4;
         ctx4.fillRect(10, 10, 150, 80);
 
         // Linear Gradient end
