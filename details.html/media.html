@@ -7,6 +7,81 @@
     <title>Media</title>
 </head>
 <body>
+    <video width="320" height="240" controls>
+        <source src="../media/vidio.mp4" type="video/mp4">
+        <!-- <source src="movie.ogg" type="video/ogg"> -->
+        Your browser does not support the video tag.
+    </video>
+    <p>The controls attribute adds video controls, like play, pause, and volume. The text between the &lt;video&gt; and &lt;/video&gt; tags will only be displayed in browsers that do not support the &lt;video&gt; element. There are three supported video formats: MP4, WebM, and Ogg.</p>
+
+
+    <h3>Autoplay</h3>
+    <p>To start a video automatically, use the autoplay attribute.</p>
+    <button onclick="autoPlayPause()">play / Pause</button><br>
+    <video id="autoPlay" width="320" height="240" autoplay>
+        <source src="../media/vidio.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
     
+
+    <h3>Muted autoplay</h3>
+    <p>Add muted after autoplay to let your video start playing automatically (but muted)</p>
+    <video width="320" height="240" autoplay muted>
+        <source src="../media/vidio.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+
+
+    <div style="text-align:center"> 
+        <button onclick="playPause()">Play/Pause</button> 
+        <button onclick="makeBig()">Big</button>
+        <button onclick="makeSmall()">Small</button>
+        <button onclick="makeNormal()">Normal</button>
+        <br><br>
+        <video id="video1" width="420">
+          <source src="../media/vidio.mp4" type="video/mp4">
+          Your browser does not support HTML video.
+        </video>
+      </div>
+
+      <script> 
+        var autoPlay = document.getElementById("autoPlay"); 
+        function autoPlayPause() { 
+          if (autoPlay.paused) 
+            autoPlay.play(); 
+          else 
+            autoPlay.pause(); 
+        } 
+
+        var myVideo = document.getElementById("video1"); 
+        
+        function playPause() { 
+          if (myVideo.paused) 
+            myVideo.play(); 
+          else 
+            myVideo.pause(); 
+        } 
+        
+        function makeBig() { 
+            myVideo.width = 660; 
+        } 
+        
+        function makeSmall() { 
+            myVideo.width = 320; 
+        } 
+        
+        function makeNormal() { 
+            myVideo.width = 520; 
+        } 
+        </script> 
+
+        <hr>
+        <h3>Audio</h3>
+        <audio controls>
+            <source src="../media/audio.mp3" type="audio/ogg">
+            <!-- <source src="horse.mp3" type="audio/mpeg"> -->
+          Your browser does not support the audio element.
+        </audio>
 </body>
 </html>
