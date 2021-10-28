@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+</head>
+<body>
+    <video width="320" height="240" controls>
+        <source src="../media/vidio.mp4" type="video/mp4">
+        <!-- <source src="movie.ogg" type="video/ogg"> -->
+        Your browser does not support the video tag.
+    </video>
+    <p>The controls attribute adds video controls, like play, pause, and volume. The text between the &lt;video&gt; and &lt;/video&gt; tags will only be displayed in browsers that do not support the &lt;video&gt; element. There are three supported video formats: MP4, WebM, and Ogg.</p>
+
+
+    <h3>Autoplay</h3>
+    <p>To start a video automatically, use the autoplay attribute.</p>
+    <button onclick="autoPlayPause()">play / Pause</button><br>
+    <!-- <video id="autoPlay" width="320" height="240" controls autoplay>
+        <source src="../media/vidio.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video> -->
+    
+
+    <h3>Muted autoplay</h3>
+    <p>Add muted after autoplay to let your video start playing automatically (but muted)</p>
+    <video width="320" height="240" autoplay muted>
+        <source src="../media/vidio.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+
+
+    <div style="text-align:center"> 
+        <button onclick="playPause()">Play/Pause</button> 
+        <button onclick="makeBig()">Big</button>
+        <button onclick="makeSmall()">Small</button>
+        <button onclick="makeNormal()">Normal</button>
+        <br><br>
+        <video id="video1" width="420">
+          <source src="../media/vidio.mp4" type="video/mp4">
+          Your browser does not support HTML video.
+        </video>
+      </div>
+
+      <script> 
+        var autoPlay = document.getElementById("autoPlay"); 
+        function autoPlayPause() { 
+          if (autoPlay.paused) 
+            autoPlay.play(); 
+          else 
+            autoPlay.pause(); 
+        } 
+
+        var myVideo = document.getElementById("video1"); 
+        
+        function playPause() { 
+          if (myVideo.paused) 
+            myVideo.play(); 
+          else 
+            myVideo.pause(); 
+        } 
+        
+        function makeBig() { 
+            myVideo.width = 660; 
+        } 
+        
+        function makeSmall() { 
+            myVideo.width = 320; 
+        } 
+        
+        function makeNormal() { 
+            myVideo.width = 520; 
+        } 
+        </script> 
+
+        <hr>
+        <h3>Audio</h3>
+        <audio controls>
+            <source src="../media/audio.mp3" type="audio/ogg">
+          Your browser does not support the audio element.
+        </audio>
+
+        <h3>autoplay</h3>
+        <!-- <audio controls autoplay>
+            <source src="../media/audio.mp3" type="audio/ogg">
+          Your browser does not support the audio element.
+        </audio> -->
+
+        <h3>autoplay muted</h3>
+        <audio controls autoplay muted>
+            <source src="../media/audio.mp3" type="audio/ogg">
+          Your browser does not support the audio element.
+        </audio>
+
+
+        <h3>Youtube video</h3>
+        <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+        </iframe>
+        <br>
+        <h4>autoplay, mute (autoplay=1&mute=1)</h4>
+        <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+        </iframe>
+        <h4>YouTube Loop</h4>
+        <small>Add loop=1 to let your video loop forever.</small><br>
+        <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
+        </iframe>
+
+        <h4>YouTube Controls</h4>
+        <small>Add controls=0 to not display controls in the video player.</small><br>
+        <iframe width="420" height="315"
+        src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
+        </iframe>
+</body>
+</html>
